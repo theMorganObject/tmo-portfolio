@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Reey";
+  src: url("/fonts/reey/Reey-Regular.otf");
+}
+
+.fancyFont {
+  font-family: "Reey", serif;
+}
