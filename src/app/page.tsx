@@ -38,7 +38,7 @@ export default function Home() {
       >
         Morgan Padraic O&apos;Shaughnessey
       </h1>
-      <ul className="grid gap-y-4 grid-rows-4 grid-cols-8 text-xs sm: text-lg md:text-xl lg:text-2xl">
+      <ul className="grid gap-y-4 grid-rows-4 grid-cols-8 text-sm sm:text-lg md:text-xl lg:text-2xl">
         {workSamples.map((sample, index) => (
           <WorkSample
             key={sample.id}
