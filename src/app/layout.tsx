@@ -7,6 +7,8 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "theMorganObject",
   description: "Home page of Morgan O'Shaughnessey, front-end developer",
+  keywords:
+    "dev, developer, front-end developer, web development, Next.js, React, React.js, Morgan, Morgan O'Shaughnessey",
 };
 
 export default function RootLayout({
