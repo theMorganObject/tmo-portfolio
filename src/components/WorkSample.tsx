@@ -16,15 +16,14 @@ const WorkSample: React.FC<WorkSampleProps> = ({
   href,
 }) => {
   return (
-    <li className={`${styles.item}`}>
+    <li className={styles.item}>
       <Link
-        className="text-blue-3 text-md underline cursor-pointer hover:text-red-4"
+        className="text-blue-3 text-md underline underline-offset-[3px] decoration-1 cursor-pointer hover:text-red-4"
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        style={{}}
       >
-        <span className={`${styles.fancyFont}`}>{siteName}</span>
+        <span className={styles.fancyFont}>{siteName}</span>
         {` - ${description}`}
       </Link>
     </li>

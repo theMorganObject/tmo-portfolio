@@ -1,14 +1,15 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Josefin_Sans } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const josefinSans = Josefin_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "theMorganObject",
-  description: "Home page of Morgan O'Shaughnessey, front-end developer",
+  description:
+    "Home page of Morgan O'Shaughnessey, front-end developer and Professional Scrum Master",
   keywords:
-    "dev, developer, front-end developer, web development, Next.js, React, React.js, Morgan, Morgan O'Shaughnessey",
+    "dev, developer, front-end developer, front end developer, web development, agile, professional scrum master, Next.js, React, React.js, Morgan, Morgan O'Shaughnessey",
 };
 
 export default function RootLayout({
@@ -18,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={josefinSans.className}>{children}</body>
     </html>
   );
 }
