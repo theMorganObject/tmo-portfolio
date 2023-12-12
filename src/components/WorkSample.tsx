@@ -1,12 +1,11 @@
 import React from "react";
-import styles from "./WorkSample.module.css";
+import classes from "./WorkSample.module.css";
 import Link from "next/link";
 
 interface WorkSampleProps {
   siteName: string;
   description: string;
   href: string;
-  className: string;
   position: number;
 }
 
@@ -16,15 +15,14 @@ const WorkSample: React.FC<WorkSampleProps> = ({
   href,
 }) => {
   return (
-    <li className={`${styles.item}`}>
+    <li className={classes.item}>
       <Link
-        className="text-blue-3 text-md underline cursor-pointer hover:text-red-4"
+        className="text-blue-3 text-md underline underline-offset-[3px] decoration-1 cursor-pointer hover:text-red-4"
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        style={{}}
       >
-        <span className={`${styles.fancyFont}`}>{siteName}</span>
+        <span className="font-reey">{siteName}</span>
         {` - ${description}`}
       </Link>
     </li>
