@@ -4,13 +4,9 @@ import Link from "next/link";
 export default function Nav() {
   return (
     <div className="fixed top-0 right-0 m-8">
-      <Link
-        href="https://moshalto.com/"
-        className="grid grid-cols-2 grid-rows-2 gap-1"
-        target="_blank"
-      >
+      <div className="grid grid-cols-2 grid-rows-2 gap-1">
         {" "}
-        <Link href="#home">
+        <Link href="/">
           <div className="flex justify-center items-center bg-gray-6/20 h-8 w-8 transform -skew-x-6 hover:bg-gray-6/70 xs:h-6 xs:w-6 xl:h-12 xl:w-12">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +19,7 @@ export default function Nav() {
             </svg>
           </div>
         </Link>
-        <Link href="#work">
+        <Link href="/projects">
           <div className="flex justify-center items-center bg-blue-3/20 h-8 w-8 transform -skew-x-6 hover:bg-blue-3/70 xs:h-6 xs:w-6 xl:h-12 xl:w-12">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +32,7 @@ export default function Nav() {
             </svg>
           </div>
         </Link>
-        <Link href="#about">
+        <Link href="/about">
           <div className="flex justify-center items-center bg-red-4/20 h-8 w-8 transform -skew-x-6 hover:bg-red-4/70 xs:h-6 xs:w-6 xl:h-12 xl:w-12">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +45,7 @@ export default function Nav() {
             </svg>
           </div>
         </Link>
-        <Link href="#contact">
+        <Link href="/contact">
           <div className="flex justify-center items-center bg-lime-7/20 h-8 w-8 transform -skew-x-6 hover:bg-lime-7/70 xs:h-6 xs:w-6 xl:h-12 xl:w-12">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +58,7 @@ export default function Nav() {
             </svg>
           </div>
         </Link>
-      </Link>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,46 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.text {
+  max-width: 500px;
+  min-height: 200px;
+}
+
+.selectorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selector {
+  display: grid;
+  max-width: 100px;
+  border-radius: 50px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.selectorItem {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+/* Quadrant specific styles */
+.quadrant-0 {
+  grid-column: 1;
+}
+.quadrant-1 {
+  grid-column: 2;
+}
+.quadrant-2 {
+  grid-row: 2;
+}
+.quadrant-3 {
+  grid-row: 2;
+  grid-column: 2;
+}

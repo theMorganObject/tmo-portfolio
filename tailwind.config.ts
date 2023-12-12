@@ -64,6 +64,9 @@ const config: Config = {
       },
     },
     extend: {
+      fontFamily: {
+        reey: ['"Reey"', ...defaultTheme.fontFamily.sans],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
