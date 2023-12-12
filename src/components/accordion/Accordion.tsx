@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import classes from "./Accordion.module.css";
+import { CgArrowLongDownC } from "react-icons/cg";
 
 interface AccordionData {
   id: string;
@@ -66,10 +67,14 @@ function Selector({ data, colors, onSelect, activeIndex }: SelectorProps) {
 
   return (
     <div className={classes.selectorContainer}>
+      <div className={classes.arrowIcon}>
+        <CgArrowLongDownC className="text-gray-9" />
+      </div>
       <div
         className={classes.selector}
         style={{ transform: `rotate(${getRotation(activeIndex)}deg)` }}
       >
+        <div className={classes.goldCircle}></div>
         {colors.map((color, i) => (
           <div
             key={i}
