@@ -1,7 +1,7 @@
 import Accordion from "@/components/accordion/Accordion";
 import { morganObjects } from "../../../lib/morganObjects";
 
-const colors = ["green", "blue", "red", "black"];
+const colors = ["#5c940d", "#1864ab", "#e03131", "#343a40"];
 
 export default function About() {
   return (
