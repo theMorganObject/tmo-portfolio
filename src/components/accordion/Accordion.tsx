@@ -1,13 +1,21 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
+import Selector from "./Selector";
 import classes from "./Accordion.module.css";
-import { CgArrowLongDownC } from "react-icons/cg";
 
-interface AccordionData {
+export interface AccordionData {
   id: string;
   title: string;
   text: string;
+  color: string;
+  image: {
+    src: string;
+    alt: string;
+    height: number;
+    width: number;
+  };
 }
 
 interface AccordionProps {
@@ -18,7 +26,8 @@ interface AccordionProps {
 export default function Accordion({ data, colors }: AccordionProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const activeItem = data[activeIndex];
-  const { text } = activeItem;
+  const { title, text, color, image } = activeItem;
+  const { src, alt, height, width } = image;
 
   const handleSelect = (id: string) => {
     const index = data.findIndex((el) => el.id === id);
@@ -27,63 +36,30 @@ export default function Accordion({ data, colors }: AccordionProps) {
 
   return (
     <>
+      <h2 className="flex justify-center text-3xl text-lime-9/90 mt-6 mb-14">
+        <span className="font-reey">About:</span>
+        <span className="font-reey ml-4" style={{ color }}>
+          {title}
+        </span>
+      </h2>
       <div className={classes.accordion}>
-        <p className={classes.text}>{text}</p>
+        <div className={classes.container}>
+          <div className={classes.imgWrapper}>
+            <div className={classes.img}>
+              <Image src={src} alt={alt} width={width} height={height} />
+            </div>
+          </div>
+          <div className={classes.text}>
+            <p className="text-red-0">{text}</p>
+          </div>
+        </div>
       </div>
-      <div>
-        <Selector
-          data={data}
-          colors={colors}
-          onSelect={handleSelect}
-          activeIndex={activeIndex}
-        />
-      </div>
+      <Selector
+        data={data}
+        colors={colors}
+        onSelect={handleSelect}
+        activeIndex={activeIndex}
+      />
     </>
-  );
-}
-
-interface SelectorProps {
-  data: AccordionData[];
-  colors: string[];
-  onSelect: (i: string) => void;
-  activeIndex: number;
-}
-
-function Selector({ data, colors, onSelect, activeIndex }: SelectorProps) {
-  const getRotation = (index: number) => {
-    switch (index) {
-      case 0:
-        return 45; // Red quadrant
-      case 1:
-        return -45; // Blue quadrant
-      case 2:
-        return 135; // Green quadrant
-      case 3:
-        return -135; // Black quadrant
-      default:
-        return 0;
-    }
-  };
-
-  return (
-    <div className={classes.selectorContainer}>
-      <div className={classes.arrowIcon}>
-        <CgArrowLongDownC className="text-gray-9" />
-      </div>
-      <div
-        className={classes.selector}
-        style={{ transform: `rotate(${getRotation(activeIndex)}deg)` }}
-      >
-        <div className={classes.goldCircle}></div>
-        {colors.map((color, i) => (
-          <div
-            key={i}
-            className={`${classes.selectorItem} ${classes[`quadrant-${i}`]}`}
-            style={{ backgroundColor: color }}
-            onClick={() => onSelect(data[i].id)}
-          />
-        ))}
-      </div>
-    </div>
   );
 }

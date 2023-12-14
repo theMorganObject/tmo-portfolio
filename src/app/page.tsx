@@ -4,7 +4,7 @@ import WorkSample from "../components/WorkSample";
 export default function Home() {
   const fullName = `Morgan Padraic O'Shaughnessey`;
   return (
-    <section id="home" className="min-h-screen flex flex-col items-center p-4">
+    <section className="min-h-screen flex flex-col items-center p-4">
       <p className="mt-32 mb-12 text-xl text-red-9/90">
         Front End Developer | Scrum Master
       </p>
