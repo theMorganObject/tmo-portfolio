@@ -36,24 +36,25 @@ export default function Accordion({ data, colors }: AccordionProps) {
 
   return (
     <>
-      <h2 className="flex justify-center text-3xl text-lime-9/90 mt-6 mb-14">
+      <h2 className="flex justify-center text-3xl text-lime-9/90 mt-20 mb-14">
         <span className="font-reey">About:</span>
         <span className="font-reey ml-4" style={{ color }}>
           {title}
         </span>
       </h2>
-      <div className={classes.accordion}>
-        <div className={classes.container}>
-          <div className={classes.imgWrapper}>
-            <div className={classes.img}>
-              <Image src={src} alt={alt} width={width} height={height} />
-            </div>
-          </div>
-          <div className={classes.text}>
-            <p className="text-red-0">{text}</p>
+
+      {/* this was classes.container */}
+      <div className="flex items-center justify-center gap-5 max-w-screen-md">
+        <div className={classes.imgWrapper}>
+          <div className="w-full h-full">
+            <Image src={src} alt={alt} width={width} height={height} />
           </div>
         </div>
+        <div className="w-1/2 min-h-200">
+          <p className="text-red-0">{text}</p>
+        </div>
       </div>
+
       <Selector
         data={data}
         colors={colors}

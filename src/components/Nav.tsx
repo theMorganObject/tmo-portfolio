@@ -1,17 +1,43 @@
-import React from "react";
+"use client";
+
+import { useState, useEffect } from "react";
 import Link from "next/link";
 
 export default function Nav() {
+  const [svgSize, setSvgSize] = useState({ width: 32, height: 32 });
+
+  useEffect(() => {
+    function handleResize() {
+      // Update the svgSize state based on screen width
+      if (window.innerWidth < 768) {
+        setSvgSize({ width: 24, height: 24 });
+      } else if (window.innerWidth < 1024) {
+        setSvgSize({ width: 28, height: 28 });
+      } else if (window.innerWidth < 1280) {
+        setSvgSize({ width: 32, height: 32 });
+      } else {
+        setSvgSize({ width: 32, height: 32 });
+      }
+    }
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="fixed top-0 right-0 m-8">
       <div className="grid grid-cols-2 grid-rows-2 gap-1">
         {" "}
         <Link href="/">
-          <div className="flex justify-center items-center bg-gray-6/20 h-8 w-8 transform -skew-x-6 hover:bg-gray-6/70 xs:h-6 xs:w-6 xl:h-12 xl:w-12">
+          <div className="flex justify-center items-center bg-gray-6/20 transform -skew-x-6 hover:bg-gray-6/70 h-8 w-8 xs:h-8 xs:w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
+              width={svgSize.width}
+              height={svgSize.height}
               viewBox="0 0 256 256"
               className="fill-gray-5 hover:fill-gray-0"
             >
@@ -20,11 +46,11 @@ export default function Nav() {
           </div>
         </Link>
         <Link href="/projects">
-          <div className="flex justify-center items-center bg-blue-3/20 h-8 w-8 transform -skew-x-6 hover:bg-blue-3/70 xs:h-6 xs:w-6 xl:h-12 xl:w-12">
+          <div className="flex justify-center items-center bg-blue-3/20 transform -skew-x-6 hover:bg-blue-3/70 h-8 w-8 xs:h-8 xs:w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
+              width={svgSize.width}
+              height={svgSize.height}
               className="fill-blue-3 hover:fill-blue-0"
               viewBox="0 0 256 256"
             >
@@ -33,11 +59,11 @@ export default function Nav() {
           </div>
         </Link>
         <Link href="/about">
-          <div className="flex justify-center items-center bg-red-4/20 h-8 w-8 transform -skew-x-6 hover:bg-red-4/70 xs:h-6 xs:w-6 xl:h-12 xl:w-12">
+          <div className="flex justify-center items-center bg-red-4/20 transform -skew-x-6 hover:bg-red-4/70 h-8 w-8 xs:h-8 xs:w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
+              width={svgSize.width}
+              height={svgSize.height}
               className="fill-red-4 hover:fill-red-0"
               viewBox="0 0 256 256"
             >
@@ -46,12 +72,12 @@ export default function Nav() {
           </div>
         </Link>
         <Link href="/contact">
-          <div className="flex justify-center items-center bg-lime-7/20 h-8 w-8 transform -skew-x-6 hover:bg-lime-7/70 xs:h-6 xs:w-6 xl:h-12 xl:w-12">
+          <div className="flex justify-center items-center bg-lime-7/20 transform -skew-x-6 hover:bg-lime-7/70 h-8 w-8 xs:h-8 xs:w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              className="fill-lime-6 hover:fill-lime-0"
+              width={svgSize.width}
+              height={svgSize.height}
+              className="fill-lime-6 hover:fill-lime-0 lg:h-42 lg:w-42"
               viewBox="0 0 256 256"
             >
               <path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"></path>
