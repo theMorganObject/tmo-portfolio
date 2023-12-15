@@ -71,7 +71,7 @@ export default function Accordion({ data, colors }: AccordionProps) {
             />
           </div>
         </div>
-        <div className="min-h-200 mt-8 xs:w-auto xs:mt-8 sm:w-1/2">
+        <div className="min-h-200 xs:w-auto xs:mt-8 sm:mt-0 sm:w-1/2">
           <p className="text-red-0 sm:text-sm md:text-base">{text}</p>
         </div>
       </div>
