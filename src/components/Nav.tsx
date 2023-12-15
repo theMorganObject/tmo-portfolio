@@ -29,7 +29,7 @@ export default function Nav() {
   }, []);
 
   return (
-    <div className="fixed top-0 right-0 m-8">
+    <div className="fixed top-0 right-0 m-8 z-50">
       <div className="grid grid-cols-2 grid-rows-2 gap-1">
         {" "}
         <Link href="/">
