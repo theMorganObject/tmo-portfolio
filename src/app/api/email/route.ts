@@ -23,6 +23,7 @@ export async function POST(request: NextRequest) {
   });
 
   const mailOptions: Mail.Options = {
+    // push this code...
     from: process.env.NEXT_PUBLIC_MY_EMAIL,
     to: process.env.NEXT_PUBLIC_MY_EMAIL,
     // cc: email, TODO: send a thank-you note to this address
