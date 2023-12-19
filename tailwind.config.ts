@@ -67,6 +67,9 @@ const config: Config = {
       fontFamily: {
         reey: ['"Reey"', ...defaultTheme.fontFamily.sans],
       },
+      skew: {
+        "9": "9deg",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
