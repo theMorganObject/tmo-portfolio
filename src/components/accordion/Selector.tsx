@@ -1,7 +1,7 @@
-import { CgArrowLongDownC } from "react-icons/cg";
-import { AccordionData } from "./Accordion";
-import classes from "./Selector.module.css";
-import Link from "next/link";
+import { CgArrowLongDownC } from 'react-icons/cg';
+import { AccordionData } from './Accordion';
+import classes from './Selector.module.css';
+import Link from 'next/link';
 
 interface SelectorProps {
   data: AccordionData[];
@@ -34,13 +34,13 @@ export default function Selector({
   return (
     <div className={classes.selectorContainer}>
       <div className={classes.arrowIcon}>
-        <CgArrowLongDownC className="text-gray-9" />
+        <CgArrowLongDownC className='text-gray-9' />
       </div>
       <div
         className={classes.selector}
         style={{ transform: `rotate(${getRotation(activeIndex)}deg)` }}
       >
-        <Link href="tootge" className={classes.goldCircle}></Link>
+        <Link href='tootge' className={classes.goldCircle}></Link>
         {colors.map((color, i) => (
           <div
             key={i}

@@ -1,6 +1,6 @@
-import React from "react";
-import classes from "./WorkSample.module.css";
-import Link from "next/link";
+import React from 'react';
+import classes from './WorkSample.module.css';
+import Link from 'next/link';
 
 interface WorkSampleProps {
   siteName: string;
@@ -17,12 +17,12 @@ const WorkSample: React.FC<WorkSampleProps> = ({
   return (
     <li className={classes.item}>
       <Link
-        className="text-blue-3 text-md underline underline-offset-[3px] decoration-1 cursor-pointer hover:text-red-4"
+        className='text-blue-3 text-md underline underline-offset-[3px] decoration-1 cursor-pointer hover:text-red-4'
         href={href}
-        target="_blank"
-        rel="noopener noreferrer"
+        target='_blank'
+        rel='noopener noreferrer'
       >
-        <span className="font-reey">{siteName}</span>
+        <span className='font-reey'>{siteName}</span>
         {` - ${description}`}
       </Link>
     </li>
