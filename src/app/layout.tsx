@@ -1,12 +1,12 @@
-import "./globals.css";
-import type { Metadata } from "next";
-import { Josefin_Sans } from "next/font/google";
-import Nav from "@/components/Nav";
+import './globals.css';
+import type { Metadata } from 'next';
+import { Josefin_Sans } from 'next/font/google';
+import Nav from '@/components/Nav';
 
-const josefinSans = Josefin_Sans({ subsets: ["latin"] });
+const josefinSans = Josefin_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "theMorganObject",
+  title: 'theMorganObject',
   description:
     "Home page of Morgan O'Shaughnessey, front-end developer and Professional Scrum Master",
   keywords:
@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body className={josefinSans.className}>
         <Nav />
         {children}

@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import { useState, useEffect } from "react";
-import Selector from "./Selector";
-import classes from "./Accordion.module.css";
+import Image from 'next/image';
+import { useState, useEffect } from 'react';
+import Selector from './Selector';
+import classes from './Accordion.module.css';
 
 export interface AccordionData {
   id: string;
@@ -42,10 +42,10 @@ export default function Accordion({ data, colors }: AccordionProps) {
     };
 
     setScreenWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
@@ -54,15 +54,15 @@ export default function Accordion({ data, colors }: AccordionProps) {
 
   return (
     <>
-      <h2 className="flex justify-center text-xl xs:text-3xl text-lime-9/90 pt-32 mb-10 mx:mb-14">
-        <span className="font-reey">About:</span>
-        <span className="font-reey ml-4" style={{ color }}>
+      <h2 className='flex justify-center text-xl xs:text-3xl text-lime-9/90 pt-32 mb-10 mx:mb-14'>
+        <span className='font-reey'>About:</span>
+        <span className='font-reey ml-4' style={{ color }}>
           {title}
         </span>
       </h2>
-      <div className="flex items-center justify-betwee max-w-screen-md mx-auto px-8 flex-col xs:flex-col sm:flex-row sm:justify-around md:justify-between">
+      <div className='flex items-center justify-betwee max-w-screen-md mx-auto px-8 flex-col xs:flex-col sm:flex-row sm:justify-around md:justify-between'>
         <div className={classes.imgWrapper}>
-          <div className="w-full h-full">
+          <div className='w-full h-full'>
             <Image
               src={src}
               alt={alt}
@@ -71,8 +71,8 @@ export default function Accordion({ data, colors }: AccordionProps) {
             />
           </div>
         </div>
-        <div className="min-h-200 xs:w-auto xs:mt-8 sm:mt-0 sm:w-1/2">
-          <p className="text-red-0 sm:text-sm md:text-base">{text}</p>
+        <div className='min-h-200 xs:w-auto xs:mt-8 sm:mt-0 sm:w-1/2'>
+          <p className='text-red-0 sm:text-sm md:text-base'>{text}</p>
         </div>
       </div>
 

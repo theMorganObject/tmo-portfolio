@@ -6,7 +6,7 @@
 
 .imgWrapper::before {
   z-index: 100;
-  content: "";
+  content: '';
   position: absolute;
   top: -20%;
   left: -20%;
