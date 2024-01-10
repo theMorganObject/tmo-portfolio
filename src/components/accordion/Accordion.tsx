@@ -27,7 +27,7 @@ export default function Accordion({ data, colors }: AccordionProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const activeItem = data[activeIndex];
   const { title, text, color, image } = activeItem;
-  const { src, alt, height, width } = image;
+  const { src, alt, width } = image;
 
   const handleSelect = (id: string) => {
     const index = data.findIndex((el) => el.id === id);
@@ -54,13 +54,13 @@ export default function Accordion({ data, colors }: AccordionProps) {
 
   return (
     <>
-      <h2 className='flex justify-center text-xl xs:text-3xl text-lime-9/90 pt-32 mb-10 mx:mb-14'>
-        <span className='font-reey'>About:</span>
-        <span className='font-reey ml-4' style={{ color }}>
+      <h2 className='flex justify-center font-reey text-xl xs:text-3xl text-lime-9/90 pt-32 mb-10 mx:mb-14'>
+        <span>About:</span>
+        <span className=' ml-4' style={{ color }}>
           {title}
         </span>
       </h2>
-      <div className='flex items-center justify-betwee max-w-screen-md mx-auto px-8 flex-col xs:flex-col sm:flex-row sm:justify-around md:justify-between'>
+      <div className='flex items-center justify-between max-w-screen-md mx-auto px-8 flex-col xs:flex-col sm:flex-row sm:justify-around md:justify-between'>
         <div className={classes.imgWrapper}>
           <div className='w-full h-full'>
             <Image
