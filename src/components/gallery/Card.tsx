@@ -21,7 +21,7 @@ function Card({
       <Image src={imagePath} alt={alt} width={240} height={240} priority />
       <div className='p-4'>
         <h3 className='text-xl text-lime-7'>{siteName}</h3>
-        <p className='max-w-32 text-blue-0'>{longDescription}</p>
+        <p className='text-blue-0'>{longDescription}</p>
         <ul className='mt-4 list-none flex flex-wrap gap-2 text-blue-0'>
           {skillData.map((props) => (
             <Skill
