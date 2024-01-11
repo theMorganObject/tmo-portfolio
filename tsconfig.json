@@ -27,7 +27,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/app/api/email/route.ts"
+    "src/app/api/email/route.ts",
+    "lib/skillsMapping.js"
   ],
   "exclude": ["node_modules"]
 }
