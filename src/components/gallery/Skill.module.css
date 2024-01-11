@@ -1,0 +1,36 @@
+.skill {
+  padding: 2px 10px;
+  transform: skewX(-6deg);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+  width: fit-content;
+}
+
+.skillContent {
+  transform: skewX(6deg);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.blue {
+  background-color: rgba(28, 126, 214, 0.55);
+}
+
+.green {
+  background-color: rgba(102, 168, 15, 0.55);
+}
+
+.red {
+  background-color: rgba(240, 62, 62, 0.55);
+}
+
+.gold {
+  background-color: rgba(255, 215, 0, 0.55);
+}
+
+.purple {
+  background-color: rgba(128, 0, 128, 0.55);
+}
