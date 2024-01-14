@@ -24,7 +24,7 @@ interface AccordionProps {
 }
 
 export default function Accordion({ data, colors }: AccordionProps) {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(3); // sets the currently active slide: see below for list
   const activeItem = data[activeIndex];
   const { title, text, color, image } = activeItem;
   const { src, alt, width } = image;
@@ -85,3 +85,11 @@ export default function Accordion({ data, colors }: AccordionProps) {
     </>
   );
 }
+
+/////////////////////////////////////
+// Currently Active Slide Reference:
+
+// 0 - Green, Summary
+// 1 - Blue, Dev Skills
+// 2 - Red, Biography
+// 3 - Black, _tMO
