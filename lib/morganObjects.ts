@@ -38,7 +38,7 @@ export const morganObjects = [
   {
     id: '3',
     title: 'theMorganObject',
-    text: "Hello, and thank-you for visiting my website! I build it myself using skills I've learned over the past two years as I have facilitated a career change to tech. Using everything I've learned, I work hard (60+ hours a week!) on projects that challenge the limits of my abilities. I love to build useful, working, beautiful web apps, sites, and tools for my friends, myself, and my community. I'm always hungry for more, and I'm working on some pretty cool stuff right now, so please come visit again! You are also welcome to follow me on LinkedIn.",
+    text: "Hello, and thank-you for visiting my website! I built it myself using a range of skills I've learned over the past two years as I have facilitated a career change to tech. I work hard (60+ hours a week!) on projects that challenge the limits of my abilities so that I can build great sites and apps for clients, friends, and myself. I'm always hungry for more, and I'm working on some pretty cool stuff right now, so stay tuned!",
     color: '#343a40',
     image: {
       src: '/img/img-3.png',
