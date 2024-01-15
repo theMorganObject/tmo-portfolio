@@ -1,4 +1,4 @@
-import { workSamples } from '../../lib/worksamples';
+import { featuredProjects } from '../../lib/featuredprojects';
 import WorkSample from '../components/WorkSample';
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
         <span className='font-reey'>{fullName}</span>
       </h1>
       <ul className='grid gap-y-2 grid-rows-4 grid-cols-8 text-xs xs:gap-y-4 sm:text-base md:text-xl lg:text-2xl'>
-        {workSamples.map((sample, index) => (
+        {featuredProjects.map((sample, index) => (
           <WorkSample
             key={sample.id}
             href={sample.href}
