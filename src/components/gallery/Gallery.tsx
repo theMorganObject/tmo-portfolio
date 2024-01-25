@@ -16,10 +16,11 @@ function Gallery() {
           <Card
             key={sample.id}
             siteName={sample.siteName}
-            longDescription={sample.longDescription}
+            cardText={sample.cardText}
             skillData={skillData}
             imagePath={sample.imagePath}
             alt={sample.alt}
+            id={sample.id}
           />
         );
       })}
