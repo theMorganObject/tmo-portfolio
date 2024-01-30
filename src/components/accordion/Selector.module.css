@@ -42,6 +42,12 @@
   cursor: pointer;
 }
 
+.selectorItem:focus,
+.goldCircle:focus {
+  outline: 3px solid #ffe3e3;
+  z-index: 9;
+}
+
 /* Quadrant specific styles */
 /* green */
 .quadrant-0 {

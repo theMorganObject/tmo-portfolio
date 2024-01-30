@@ -105,7 +105,7 @@ const ContactForm: FC = () => {
         )}
       </div>
       <div className='w-full max-w-md mx-auto flex justify-center'>
-        <button className='-skew-x-9 bg-lime-8/90 py-3 px-8 text-base font-semibold text-lime-0 outline-none hover:bg-lime-0/90 hover:text-lime-9'>
+        <button className='-skew-x-9 bg-lime-8/90 py-3 px-8 text-base font-semibold text-lime-0 outline-none hover:bg-lime-0/90 hover:text-lime-9 focus:ring-4 focus:ring-lime-0'>
           Submit
         </button>
       </div>
