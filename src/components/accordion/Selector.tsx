@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 interface SelectorProps {
   data: AccordionData[];
+  title: string;
   colors: string[];
   onSelect: (i: string) => void;
   activeIndex: number;
@@ -12,6 +13,7 @@ interface SelectorProps {
 
 export default function Selector({
   data,
+  title,
   colors,
   onSelect,
   activeIndex,
@@ -39,14 +41,18 @@ export default function Selector({
       <div
         className={classes.selector}
         style={{ transform: `rotate(${getRotation(activeIndex)}deg)` }}
+        role='tablist'
       >
         <Link href='tootge' className={classes.goldCircle}></Link>
         {colors.map((color, i) => (
-          <div
+          <button
             key={i}
             className={`${classes.selectorItem} ${classes[`quadrant-${i}`]}`}
             style={{ backgroundColor: color }}
             onClick={() => onSelect(data[i].id)}
+            aria-label={`Select ${title}`}
+            role='tab'
+            tabIndex={0}
           />
         ))}
       </div>

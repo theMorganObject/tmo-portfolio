@@ -78,6 +78,7 @@ export default function Accordion({ data, colors }: AccordionProps) {
 
       <Selector
         data={data}
+        title={title}
         colors={colors}
         onSelect={handleSelect}
         activeIndex={activeIndex}
