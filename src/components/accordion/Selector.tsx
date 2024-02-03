@@ -1,7 +1,8 @@
+import Link from 'next/link';
+import Image from 'next/image';
 import { CgArrowLongDownC } from 'react-icons/cg';
 import { AccordionData } from './Accordion';
 import classes from './Selector.module.css';
-import Link from 'next/link';
 
 interface SelectorProps {
   data: AccordionData[];
@@ -35,9 +36,10 @@ export default function Selector({
 
   return (
     <div className={classes.selectorContainer}>
-      <div className={classes.arrowIcon}>
+      <div className={classes.activeIndexIndicator}>
         <CgArrowLongDownC className='text-gray-9' />
       </div>
+
       <div
         className={classes.selector}
         style={{ transform: `rotate(${getRotation(activeIndex)}deg)` }}
@@ -55,6 +57,28 @@ export default function Selector({
             tabIndex={0}
           />
         ))}
+      </div>
+      <div
+        className={classes.arrowContainer}
+        style={{ display: activeIndex === 3 ? 'absolute' : 'none' }}
+      >
+        <span
+          className='ml-3 tracking-wider font-reey text-red-8'
+          style={{ fontFamily: '"Reey", sans-serif' }}
+        >
+          click me
+        </span>
+        <Image
+          src='/hand-drawn-arrow.svg'
+          alt='Click me arrow'
+          width={80}
+          height={80}
+          style={{
+            transform: 'rotate(-45deg)',
+            filter:
+              'invert(20%) sepia(100%) saturate(7500%) hue-rotate(5deg) brightness(100%) contrast(105%)',
+          }}
+        />
       </div>
     </div>
   );
