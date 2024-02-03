@@ -60,7 +60,7 @@ export default function Accordion({ data, colors }: AccordionProps) {
           {title}
         </span>
       </h2>
-      <div className='flex items-center justify-between max-w-screen-md mx-auto px-8 flex-col xs:flex-col sm:flex-row sm:justify-around md:justify-between'>
+      <div className='flex items-center justify-between max-w-screen-md mx-auto px-8 flex-col gap-7 xs:flex-col xs:gap-0 sm:flex-row sm:justify-around md:justify-between'>
         <div className={classes.imgWrapper}>
           <div className='w-full h-full'>
             <Image
