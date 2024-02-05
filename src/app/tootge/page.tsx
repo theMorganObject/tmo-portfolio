@@ -21,7 +21,7 @@ export default function TOOTGE() {
           <br /> TOOTGE -- 5th class.
         </p>
         <Image
-          src='/img/tootge-hero.png'
+          src='/img/tootge-hero.webp'
           alt='A photo of Cashew the Dog, founder of The Order Of The Golden Extrovert'
           className='w-full md:max-w-xs lg:max-w-sm flex-shrink-0'
           width={300}
