@@ -63,7 +63,7 @@ export default function Selector({
         style={{ display: activeIndex === 3 ? 'absolute' : 'none' }}
       >
         <span
-          className='ml-3 tracking-wider font-reey text-red-8'
+          className='ml-3 tracking-wider font-reey text-red-2'
           style={{ fontFamily: '"Reey", sans-serif' }}
         >
           click me

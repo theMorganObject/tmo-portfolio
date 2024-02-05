@@ -25,6 +25,10 @@ const config: Config = {
         7: '#74b816',
         8: '#66a80f',
         9: '#5c940d',
+        10: '#528d0a', // Slightly darker, more saturated
+        11: '#487f07', // Deeper, maintaining lime's vibrancy
+        12: '#2f5d04', // Much darker, aiming for high contrast with lime-2
+        13: '#1e3f02', // Even darker, near-black with a hint of green for maximum contrast
       },
       blue: {
         0: '#e7f5ff',
@@ -37,6 +41,10 @@ const config: Config = {
         7: '#1c7ed6',
         8: '#1971c2',
         9: '#1864ab',
+        10: '#15559a', // Slightly darker, more saturated
+        11: '#12488a', // Deeper, maintaining blue's coolness
+        12: '#0f3b7a', // Richer, moving towards a navy hue
+        13: '#0c2e6a', // Dark, nearly midnight blue, maintaining blue's depth
       },
       red: {
         0: '#fff5f5',
@@ -49,6 +57,10 @@ const config: Config = {
         7: '#f03e3e',
         8: '#e03131',
         9: '#c92a2a',
+        10: '#b12a2a',
+        11: '#992323',
+        12: '#821e1e',
+        13: '#6b1d1d',
       },
       gray: {
         0: '#f8f9fa',
@@ -61,6 +73,21 @@ const config: Config = {
         7: '#495057',
         8: '#343a40',
         9: '#212529',
+      },
+      gold: {
+        0: '#fffbe6',
+        1: '#fff5cc',
+        2: '#ffefb3',
+        3: '#ffe999',
+        4: '#ffe280',
+        5: '#ffdb66',
+        6: '#ffd54d',
+        7: '#ffcf33',
+        8: '#ffc61a',
+        9: '#ffbd00',
+        10: '#d19e00',
+        11: '#b37e00',
+        12: '#805c00',
       },
     },
     extend: {

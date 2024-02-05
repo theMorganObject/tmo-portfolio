@@ -54,9 +54,9 @@ export default function Accordion({ data, colors }: AccordionProps) {
 
   return (
     <>
-      <h2 className='flex justify-center font-reey text-xl xs:text-3xl text-lime-9/90 pt-32 mb-10 mx:mb-14'>
+      <h2 className='flex justify-center font-reey text-xl xs:text-3xl text-red-2 pt-32 mb-10 mx:mb-14'>
         <span>About:</span>
-        <span className=' ml-4' style={{ color }}>
+        <span className='ml-4' style={{ color }}>
           {title}
         </span>
       </h2>
@@ -72,7 +72,7 @@ export default function Accordion({ data, colors }: AccordionProps) {
           </div>
         </div>
         <div className='min-h-200 xs:w-auto xs:mt-8 sm:mt-0 sm:w-1/2'>
-          <p className='text-red-0 sm:text-sm md:text-base'>{text}</p>
+          <p className='text-red-2 sm:text-sm md:text-base'>{text}</p>
         </div>
       </div>
 
