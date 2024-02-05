@@ -25,10 +25,10 @@ const config: Config = {
         7: '#74b816',
         8: '#66a80f',
         9: '#5c940d',
-        10: '#528d0a', // Slightly darker, more saturated
-        11: '#487f07', // Deeper, maintaining lime's vibrancy
-        12: '#2f5d04', // Much darker, aiming for high contrast with lime-2
-        13: '#1e3f02', // Even darker, near-black with a hint of green for maximum contrast
+        10: '#528d0a',
+        11: '#487f07',
+        12: '#2f5d04',
+        13: '#1e3f02',
       },
       blue: {
         0: '#e7f5ff',
@@ -41,10 +41,10 @@ const config: Config = {
         7: '#1c7ed6',
         8: '#1971c2',
         9: '#1864ab',
-        10: '#15559a', // Slightly darker, more saturated
-        11: '#12488a', // Deeper, maintaining blue's coolness
-        12: '#0f3b7a', // Richer, moving towards a navy hue
-        13: '#0c2e6a', // Dark, nearly midnight blue, maintaining blue's depth
+        10: '#15559a',
+        11: '#12488a',
+        12: '#0f3b7a',
+        13: '#0c2e6a',
       },
       red: {
         0: '#fff5f5',
@@ -92,7 +92,8 @@ const config: Config = {
     },
     extend: {
       fontFamily: {
-        reey: ['"Reey"', ...defaultTheme.fontFamily.sans],
+        sans: ['var(--font-josefin-sans)'],
+        reey: ['var(--font-reey)'],
       },
       skew: {
         '9': '9deg',

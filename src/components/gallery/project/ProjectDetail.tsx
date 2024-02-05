@@ -37,7 +37,7 @@ function ProjectDetail({ project, data }: ProjectDetailProps) {
   };
   return (
     <article className='flex flex-col justify-center items-center p-4 mt-20'>
-      <h2 className='font-reey text-xl text-lime-7 tracking-wider mb-10 xs:text-3xl'>
+      <h2 className='font-reey text-xl text-lime-4 tracking-wider mb-10 xs:text-3xl'>
         {siteName}
       </h2>
       <h3 className='text-blue-0 text-base mb-2 xs:text-lg xs:p-4 sm:text-lg sm:max-w-screen-sm'>
