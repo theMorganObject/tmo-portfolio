@@ -1,9 +1,20 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Josefin_Sans } from 'next/font/google';
+import localFont from 'next/font/local';
 import Nav from '@/components/Nav';
 
-const josefinSans = Josefin_Sans({ subsets: ['latin'] });
+const josefinSans = Josefin_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-josefin-sans',
+});
+
+const reey = localFont({
+  src: './Reey-Regular.otf',
+  display: 'swap',
+  variable: '--font-reey',
+});
 
 export const metadata: Metadata = {
   title: 'theMorganObject',
@@ -20,7 +31,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={josefinSans.className}>
+      <body className={`${josefinSans.variable} ${reey.variable}`}>
         <Nav />
         {children}
       </body>

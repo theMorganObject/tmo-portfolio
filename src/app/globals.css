@@ -16,12 +16,6 @@
   }
 }
 
-@font-face {
-  font-family: 'Reey';
-  src: url('/fonts/reey/Reey-Regular.otf');
-}
-
 body {
   color: rgb(var(--foreground-rgb));
-  background: #343a40;
 }

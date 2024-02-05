@@ -62,10 +62,7 @@ export default function Selector({
         className={classes.arrowContainer}
         style={{ display: activeIndex === 3 ? 'absolute' : 'none' }}
       >
-        <span
-          className='ml-3 tracking-wider font-reey text-red-8'
-          style={{ fontFamily: '"Reey", sans-serif' }}
-        >
+        <span className='font-reey tracking-wider text-red-2 ml-3'>
           click me
         </span>
         <Image

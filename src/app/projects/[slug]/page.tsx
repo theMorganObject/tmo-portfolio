@@ -11,7 +11,7 @@ export function generateStaticParams() {
 
 export default function Page({ params }: { params: { slug: string } }) {
   return (
-    <section className='min-h-screen bg-blue-3/20 pt-10'>
+    <section className='min-h-screen bg-blue-12 font-sans pt-10'>
       <ProjectDetail project={params.slug} data={workSamples} />
     </section>
   );
