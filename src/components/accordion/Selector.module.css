@@ -3,6 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* this is here to prevent a black band at the bottom of the UI */
+  padding-bottom: 30px;
 }
 
 .activeIndexIndicator {
@@ -26,8 +28,6 @@
   box-shadow: 0px 0px 22px -7px #d0ebff;
   overflow: hidden;
   transition: all 0.5s ease;
-  /* this is here to prevent a black band at the bottom of the UI */
-  margin-bottom: 20px;
 }
 
 .goldCircle {

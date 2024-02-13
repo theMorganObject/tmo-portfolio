@@ -57,10 +57,15 @@ function ProjectDetail({ project, data }: ProjectDetailProps) {
         >
           Go Back
         </button>
-        <Link href={href} target='_blank' rel='noopener noreferrer'>
-          <button className='-skew-x-9 bg-blue-8/90 py-3 px-4 text-base font-semibold text-blue-0 hover:bg-blue-0/90 hover:text-blue-9'>
+        <Link
+          href={href}
+          aria-label={`Visit site ${siteName}`}
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <div className='-skew-x-9 bg-blue-8/90 py-3 px-4 text-base font-semibold text-blue-0 hover:bg-blue-0/90 hover:text-blue-9'>
             Visit Site
-          </button>
+          </div>
         </Link>
       </div>
     </article>

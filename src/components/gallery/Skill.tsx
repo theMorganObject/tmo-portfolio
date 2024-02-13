@@ -10,7 +10,7 @@ function Skill(props: SkillProps) {
   return (
     <li className={`${classes.skill} ${classes[props.background]}`}>
       <div className={classes.skillContent}>
-        {props.skill} {props.icon}
+        {props.skill} <span aria-hidden='true'>{props.icon}</span>
       </div>
     </li>
   );

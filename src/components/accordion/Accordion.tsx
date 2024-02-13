@@ -68,6 +68,7 @@ export default function Accordion({ data, colors }: AccordionProps) {
               alt={alt}
               width={imageDimensions}
               height={imageDimensions}
+              priority
             />
           </div>
         </div>
