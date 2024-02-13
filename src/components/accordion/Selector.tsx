@@ -45,7 +45,6 @@ export default function Selector({
         style={{ transform: `rotate(${getRotation(activeIndex)}deg)` }}
         role='tablist'
       >
-        <Link href='tootge' className={classes.goldCircle}></Link>
         {colors.map((color, i) => (
           <button
             key={i}
@@ -57,6 +56,11 @@ export default function Selector({
             tabIndex={0}
           />
         ))}
+        <Link
+          href='tootge'
+          aria-label={'Secret Link to The Order Of the Golden Extrovert'}
+          className={classes.goldCircle}
+        />
       </div>
       <div
         className={classes.arrowContainer}

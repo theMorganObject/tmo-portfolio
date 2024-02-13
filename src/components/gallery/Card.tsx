@@ -23,6 +23,7 @@ function Card({
   return (
     <Link
       href={linkPath}
+      aria-label={`Learn more about ${siteName}`}
       className='flex flex-col items-start w-60 m-10 bg-transparent border-4 border-lime-9 shadow-xl transition duration-200 hover:scale-105 hover:cursor-pointer hover:shadow-2xl focus:ring-4 focus:ring-blue-0'
     >
       <Image src={imagePath} alt={alt} width={240} height={240} priority />
