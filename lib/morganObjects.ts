@@ -2,7 +2,7 @@ export const morganObjects = [
   {
     id: '0',
     title: 'Summary',
-    text: 'I am an independent front-end developer specializing in React, dedicated to solving real-world problems for clients. My work is guided by accessibility and design best practices, with a focus on creating interfaces that cater to users with impaired vision. I excel in Agile and Scrum practices and actively contribute my organizational skills to open-source projects. I am a passionate advocate for promoting healthy posture through the practice of The Alexander Technique.',
+    text: "That soundboard is still proudly featured as the very first item in my project gallery. These days, I work as an independent contractor at a media streaming startup. When I'm not building a super awesome state-of-the-art platform for them, I'm working on a passion project or two, such as a poetry publishing platform for a dear friend or a Japanese flash-card app for my own use.",
     color: '#a9e34b',
     image: {
       src: '/img/img-0.webp',
@@ -14,7 +14,7 @@ export const morganObjects = [
   {
     id: '1',
     title: 'Developer Skills',
-    text: "My expertise lies in front-end development, and I hold the Professional Scrum Master (PSM-1) certification from Scrum.org. I leverage React and Next.js to craft visually stunning, responsive, and highly accessible user interfaces. I'm well-versed in Agile methodologies and take pride in being a servant leader who ensures the success of my team.",
+    text: "If you have a design, business need, or app concept in mind you'd care to discuss please drop me a line (green envelope, top right corner). I love building things, and take great pleasure in making great ideas come to life!",
     color: '#a5d8ff',
     image: {
       src: '/img/img-1.webp',
@@ -38,7 +38,7 @@ export const morganObjects = [
   {
     id: '3',
     title: 'theMorganObject',
-    text: "Hello, and thank-you for visiting my website! I built it myself using a range of skills I've learned over the past two years as I have facilitated a career change to tech. I work hard (60+ hours a week!) on projects that challenge the limits of my abilities so that I can build great sites and apps for clients, friends, and myself. I'm always hungry for more, and I'm working on some pretty cool stuff right now, so stay tuned!",
+    text: 'Hi, I\'m theMorganObject! "tMO-san" for short. Welcome to my personal web developer site. I designed and built it from scratch using a really cool technology that I love working with, called Next.js. I\'ll be adding a blog shortly, to feature the work of fellow developers that I find interesting and inspiring. In the meantime, feel free to try a spin on the wheel below...',
     color: '#ced4da',
     image: {
       src: '/img/img-3.webp',
