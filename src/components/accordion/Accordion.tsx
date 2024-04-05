@@ -24,6 +24,7 @@ interface AccordionProps {
 }
 
 export default function Accordion({ data, colors }: AccordionProps) {
+  const [screenWidth, setScreenWidth] = useState<number>(0);
   const [activeIndex, setActiveIndex] = useState(3); // sets the currently active slide: see below for list
   const activeItem = data[activeIndex];
   const { title, text, color, image } = activeItem;
@@ -33,8 +34,6 @@ export default function Accordion({ data, colors }: AccordionProps) {
     const index = data.findIndex((el) => el.id === id);
     setActiveIndex(index);
   };
-
-  const [screenWidth, setScreenWidth] = useState<number>(0);
 
   useEffect(() => {
     const handleResize = () => {
