@@ -8,9 +8,6 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "engines": {
-    "node": "20.15.1"
-  },
   "dependencies": {
     "@types/node": "20.5.0",
     "@types/nodemailer": "^6.4.14",
