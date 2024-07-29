@@ -54,13 +54,13 @@ export default function Accordion({ data, colors }: AccordionProps) {
 
   return (
     <>
-      <h2 className='flex justify-center font-reey text-xl xs:text-3xl text-red-2 pt-32 mb-10 mx:mb-14'>
+      <h2 className='flex justify-center font-reey text-xl 2xs:text-3xl text-red-2 pt-32 mb-10 mx:mb-14'>
         <span>About:</span>
         <span className='ml-4' style={{ color }}>
           {title}
         </span>
       </h2>
-      <div className='flex items-center justify-between max-w-screen-md mx-auto px-8 flex-col gap-7 xs:flex-col xs:gap-0 sm:flex-row sm:justify-around md:justify-between'>
+      <div className='flex items-center justify-between max-w-screen-md mx-auto px-8 flex-col gap-7 2xs:flex-col 2xs:gap-0 sm:flex-row sm:justify-around md:justify-between'>
         <div className={classes.imgWrapper}>
           <div className='w-full h-full'>
             <Image
@@ -72,7 +72,7 @@ export default function Accordion({ data, colors }: AccordionProps) {
             />
           </div>
         </div>
-        <div className='min-h-200 xs:w-auto xs:mt-8 sm:mt-0 sm:w-1/2'>
+        <div className='min-h-200 2xs:w-auto 2xs:mt-8 sm:mt-0 sm:w-1/2'>
           <p className='text-red-2 sm:text-sm md:text-base'>{text}</p>
         </div>
       </div>

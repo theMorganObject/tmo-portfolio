@@ -31,13 +31,13 @@ export default function Nav() {
   }, []);
 
   return (
-    <nav aria-label='Main navigation' className='fixed top-0 right-0 m-8 z-50'>
+    <nav aria-label='Main navigation' className='fixed top-0 right-0 p-8 z-50'>
       <div className='grid grid-cols-2 grid-rows-2 gap-1'>
         <Link href='/' aria-label='Home'>
           <div
             className={`group flex justify-center items-center transform -skew-x-6 hover:bg-gray-4/70 ${
               pathname === '/' ? 'bg-gray-4/70' : 'bg-gray-4/20'
-            } h-8 w-8 xs:h-8 xs:w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14`}
+            } h-8 w-8 2xs:h-8 2xs:w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14`}
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -57,7 +57,7 @@ export default function Nav() {
           <div
             className={`group flex justify-center items-center  transform -skew-x-6 hover:bg-blue-3/70 ${
               pathname === '/projects' ? 'bg-blue-3/70' : 'bg-blue-3/20'
-            } h-8 w-8 xs:h-8 xs:w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14`}
+            } h-8 w-8 2xs:h-8 2xs:w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14`}
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -77,7 +77,7 @@ export default function Nav() {
           <div
             className={`group flex justify-center items-center transform -skew-x-6 hover:bg-red-4/70 ${
               pathname === '/about' ? 'bg-red-4/70' : 'bg-red-4/20'
-            } h-8 w-8 xs:h-8 xs:w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14`}
+            } h-8 w-8 2xs:h-8 2xs:w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14`}
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -97,7 +97,7 @@ export default function Nav() {
           <div
             className={`group flex justify-center items-center transform -skew-x-6 hover:bg-lime-7/70 ${
               pathname === '/contact' ? 'bg-lime-7/70' : 'bg-lime-7/20'
-            }  h-8 w-8 xs:h-8 xs:w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14`}
+            }  h-8 w-8 2xs:h-8 2xs:w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14`}
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
