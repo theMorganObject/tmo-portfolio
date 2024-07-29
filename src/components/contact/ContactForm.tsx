@@ -41,7 +41,7 @@ const ContactForm: FC = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className='flex flex-col items-center mb-6 w-full px-4'
+      className='flex flex-col items-center w-full px-5'
     >
       <div className='mb-5 w-full max-w-sm mx-auto'>
         <label
