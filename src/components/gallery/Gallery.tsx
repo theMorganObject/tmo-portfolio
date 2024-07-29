@@ -4,7 +4,7 @@ import { skillsMapping } from '../../../lib/skillsMapping';
 
 function Gallery() {
   return (
-    <div className='flex flex-col md:flex-row md:flex-wrap md:justify-center md:gap-4'>
+    <div className='flex flex-col sm:flex-row sm:flex-wrap sm:justify-center'>
       {workSamples.map((sample) => {
         const skillData = sample.skills.map((skill) => ({
           skill,
