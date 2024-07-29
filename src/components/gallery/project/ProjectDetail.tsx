@@ -24,7 +24,7 @@ function ProjectDetail({ project, data }: ProjectDetailProps) {
 
   if (!curProject) {
     return (
-      <div className='flex justify-center mt-24 text-red-6 xs:text-xl md:text-2xl md:mt-32'>
+      <div className='flex justify-center mt-24 text-red-6 2xs:text-xl md:text-2xl md:mt-32'>
         No project found for ID {project}
       </div>
     );
@@ -37,10 +37,10 @@ function ProjectDetail({ project, data }: ProjectDetailProps) {
   };
   return (
     <article className='flex flex-col justify-center items-center p-4 mt-20'>
-      <h2 className='font-reey text-xl text-lime-4 tracking-wider mb-10 xs:text-3xl'>
+      <h2 className='font-reey text-xl text-lime-4 tracking-wider mb-10 2xs:text-3xl'>
         {siteName}
       </h2>
-      <h3 className='text-blue-0 text-base mb-2 xs:text-lg xs:p-4 sm:text-lg sm:max-w-screen-sm'>
+      <h3 className='text-blue-0 text-base mb-2 2xs:text-lg 2xs:p-4 sm:text-lg sm:max-w-screen-sm'>
         {aboutText}
       </h3>
       <Image

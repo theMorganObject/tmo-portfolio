@@ -24,9 +24,11 @@ function Card({
     <Link
       href={linkPath}
       aria-label={`Learn more about ${siteName}`}
-      className='flex flex-col items-start w-60 m-10 bg-transparent border-4 border-lime-9 shadow-xl transition duration-200 hover:scale-105 hover:cursor-pointer hover:shadow-2xl focus:ring-4 focus:ring-blue-0'
+      className='flex flex-col items-start m-4 min-w-60 max-w-80 bg-transparent border-4 border-lime-9 shadow-xl transition duration-200 hover:scale-105 hover:cursor-pointer hover:shadow-2xl focus:ring-4 focus:ring-blue-0'
     >
-      <Image src={imagePath} alt={alt} width={240} height={240} priority />
+      <div className='relative w-full h-48'>
+        <Image src={imagePath} alt={alt} className='object-cover' fill />
+      </div>
       <div className='p-4'>
         <h3 className='text-xl text-lime-4'>{siteName}</h3>
         <p className='text-blue-0'>{cardText}</p>
