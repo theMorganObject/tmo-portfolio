@@ -29,6 +29,7 @@
         "semi": true,
         "endOfLine": "lf"
       }
-    ]
+    ],
+    "react/react-in-jsx-scope": "off"
   }
 }
