@@ -9,7 +9,6 @@ export interface AccordionData {
   id: string;
   title: string;
   text: string;
-  color: string;
   image: {
     src: string;
     alt: string;
@@ -26,7 +25,7 @@ interface AccordionProps {
 export default function Accordion({ data, colors }: AccordionProps) {
   const [activeIndex, setActiveIndex] = useState(3); // sets the currently active slide: see below for list
   const activeItem = data[activeIndex];
-  const { title, text, color, image } = activeItem;
+  const { title, text, image } = activeItem;
   const { src, alt, width } = image;
 
   const handleSelect = (id: string) => {
@@ -54,11 +53,8 @@ export default function Accordion({ data, colors }: AccordionProps) {
 
   return (
     <>
-      <h2 className='flex justify-center font-reey text-xl 2xs:text-3xl text-red-2 pt-32 mb-10 mx:mb-14'>
-        <span>About:</span>
-        <span className='ml-4' style={{ color }}>
-          {title}
-        </span>
+      <h2 className='flex justify-center font-reey text-red-0 text-4xl pt-32 mb-16 md:text-5xl md:mb-20'>
+        About
       </h2>
       <div className='flex items-center justify-between max-w-screen-md mx-auto px-8 flex-col gap-7 2xs:flex-col 2xs:gap-0 sm:flex-row sm:justify-around md:justify-between'>
         <div className={classes.imgWrapper}>
