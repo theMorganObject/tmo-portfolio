@@ -31,7 +31,10 @@ export default function Nav() {
   }, []);
 
   return (
-    <nav aria-label='Main navigation' className='fixed top-0 right-0 p-8 z-50'>
+    <nav
+      aria-label='Main navigation'
+      className='fixed top-0 right-0 p-4 xs:p-8 z-50'
+    >
       <div className='grid grid-cols-2 grid-rows-2 gap-1'>
         <Link href='/' aria-label='Home'>
           <div
