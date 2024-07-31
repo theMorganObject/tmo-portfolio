@@ -17,10 +17,10 @@ const WorkSample: React.FC<WorkSampleProps> = ({
   return (
     <li className={classes.item}>
       <Link
-        className='text-blue-3 text-md underline underline-offset-[3px] decoration-1 cursor-pointer hover:text-red-3 focus:outline-none focus:ring-2 focus:ring-red-5'
+        className='text-blue-3 underline underline-offset-[3px] decoration-1 cursor-pointer hover:text-red-3 focus:outline-none focus:ring-2 focus:ring-red-5'
         href={href}
       >
-        <span className='font-reey'>{siteName}</span>
+        <span className='font-reey tracking-widest'>{siteName}</span>
         {` - ${description}`}
       </Link>
     </li>

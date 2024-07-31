@@ -96,6 +96,9 @@ const config: Config = {
         sans: ['var(--font-josefin-sans)'],
         reey: ['var(--font-reey)'],
       },
+      gridTemplateColumns: {
+        '20': 'repeat(20, minmax(0, 1fr))',
+      },
       skew: {
         '9': '9deg',
       },
