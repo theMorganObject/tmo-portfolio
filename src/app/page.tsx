@@ -1,4 +1,4 @@
-import { featuredProjects } from '../../lib/featuredprojects';
+import { portfolioData } from '../../lib/portfolioData';
 import WorkSample from '../components/WorkSample';
 
 export default function Home() {
@@ -13,12 +13,12 @@ export default function Home() {
         {fullName}
       </h1>
       <ul className='grid grid-rows-4 grid-cols-20 xs:grid-cols-12 gap-y-4 2xs:text-xs px-1.5 mt-12 sm:text-base md:text-xl md:mt-20 lg:text-2xl lg:mt-24'>
-        {featuredProjects.map((sample, index) => (
+        {portfolioData.map((sample, index) => (
           <WorkSample
-            key={sample.id}
-            href={sample.href}
+            key={sample.siteName}
+            href={sample.slug}
             siteName={sample.siteName}
-            description={sample.description}
+            description={sample.featuredDescription}
             position={index + 1}
           />
         ))}

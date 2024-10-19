@@ -1,18 +1,19 @@
-import ProjectDetail from '@/components/gallery/project/ProjectDetail';
+import NewProjectDetail from '@/components/gallery/project/NewProjectDetail';
+import { portfolioData } from '../../../../lib/portfolioData';
 import { workSamples } from '../../../../lib/worksamples';
 
 export function generateStaticParams() {
-  const allProjects = workSamples;
+  const allProjects = portfolioData;
 
   return allProjects.map((project) => ({
-    slug: project.id.toString(),
+    slug: project.slug.toString(),
   }));
 }
 
 export default function Page({ params }: { params: { slug: string } }) {
   return (
     <section className='min-h-screen bg-blue-12 font-sans pt-10'>
-      <ProjectDetail project={params.slug} data={workSamples} />
+      <NewProjectDetail id={`projects/${params.slug}`} data={portfolioData} />
     </section>
   );
 }

@@ -8,52 +8,26 @@ import ProjectFeature from './ProjectFeature';
 import Skill from '../Skill';
 import { skillsMapping } from '../../../../lib/skillsMapping';
 
-function NewProjectDetail() {
+function NewProjectDetail({ id, data }: { id: string; data: any }) {
   const router = useRouter();
+  const curProject = data.find((obj: any) => id === obj.slug);
 
-  // TODO: move all data to util file for all project data once this design NewProjectDetail component has been implementned for all projects
+  if (!curProject) {
+    return (
+      <div className='flex justify-center mt-24 text-red-6 2xs:text-xl md:text-2xl md:mt-32'>
+        No project found for ID {id}
+      </div>
+    );
+  }
 
-  const siteName = 'Klic.gg';
-  const href = 'http://www.alpha.klic.gg/';
+  const { siteName, href, aboutText, skills, heroImage, feature1, feature2 } =
+    curProject;
 
-  const aboutText =
-    'A video multi-streaming platform similar to Twitch, with unique features that empower users to be their own multi-stream live editors. As the Frontend Technical Lead, I led a team of 3 developers in a 6-month platform-wide refactor that improved page speed and performance by 89%. Throughout 12 sprint cycles, I collaborated with the Product Owner to implement new features such as monetization, channel analytics, and admin roles, while also addressing critical data-security vulnerabilities and improving code quality standards.';
-
-  const skills = ['TypeScript', 'Next.js', 'GraphQL', 'Agile Methodologies'];
-  const skillData = skills.map((skill) => ({
+  const skillData = skills.map((skill: any) => ({
     skill,
-    //@ts-ignore
+    //@ts-ignore,
     ...skillsMapping[skill],
   }));
-
-  const heroImage = {
-    imagePath: '/img/portfolio/klic/1.png',
-    alt: 'klic homepage',
-    width: 1536,
-    height: 960,
-  };
-
-  const feature1 = {
-    name: 'Channel Page',
-    text: "I led a channel page redesign, focusing on implementing reusable components and eliminating outdated, commented-out code. I collaborated closely with backend engineers to optimize data fetching, consolidated duplicate components from the landing page into a single, reusable module, and worked alongside a designer to ensure the design aligned with the product manager's specifications. Additionally, I played a key role in unifying data naming conventions across the stack, enhancing maintainability and consistency.",
-    image: {
-      imagePath: '/img/portfolio/klic/2.png',
-      alt: 'channel page',
-      width: 480,
-      height: 300,
-    },
-  };
-
-  const feature2 = {
-    name: 'Analytics Page',
-    text: "I spearheaded the analytics redesign, one of the platform's capstone features, following the completion of a platform-wide refactor and performance optimizations. This feature was built from the ground up, spanning several sprints where I served as the technical voice between product and design. I worked closely with the backend engineer to ensure data naming standards aligned with those agreed upon in design meetings. The project progressed from the initial design draft to the final mock-up, though it has yet to be connected to the back-end.",
-    image: {
-      imagePath: '/img/portfolio/klic/3.png',
-      alt: 'analytics page',
-      width: 480,
-      height: 300,
-    },
-  };
 
   const handleBack = () => {
     router.back();
@@ -87,12 +61,12 @@ function NewProjectDetail() {
           Tech Stack
         </h3>
         <div className='flex flex-wrap gap-2 mb-12'>
-          {skillData.map((props) => (
+          {skillData.map((skill: any) => (
             <Skill
-              background={props.background}
-              skill={props.skill}
-              icon={props.icon}
-              key={props.skill}
+              background={skill.background}
+              skill={skill.skill}
+              icon={skill.icon}
+              key={skill.skill}
             />
           ))}
         </div>
