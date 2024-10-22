@@ -1,27 +1,20 @@
 import React from 'react';
-import classes from './WorkSample.module.css';
 import Link from 'next/link';
 
 interface WorkSampleProps {
   siteName: string;
-  description: string;
   href: string;
-  position: number;
 }
 
-const WorkSample: React.FC<WorkSampleProps> = ({
-  siteName,
-  description,
-  href,
-}) => {
+const WorkSample: React.FC<WorkSampleProps> = ({ siteName, href }) => {
   return (
-    <li className={classes.item}>
+    <li className='flex flex-col justify-center items-center mb-2'>
       <Link
-        className='text-blue-3 underline underline-offset-[3px] decoration-1 cursor-pointer hover:text-red-3 focus:outline-none focus:ring-2 focus:ring-red-5'
         href={href}
+        className='flex justify-between items-center w-full max-w-xs px-4 py-2 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-150 ease-in-out'
       >
-        <span className='font-reey tracking-widest'>{siteName}</span>
-        {` - ${description}`}
+        <span>{siteName}</span>
+        <span className='text-gray-300'>(show more)</span>
       </Link>
     </li>
   );

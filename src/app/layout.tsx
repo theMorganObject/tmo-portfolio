@@ -2,7 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Josefin_Sans } from 'next/font/google';
 import localFont from 'next/font/local';
-import Nav from '@/components/Nav';
+import Header from '@/components/UI/Header';
 
 const josefinSans = Josefin_Sans({
   subsets: ['latin'],
@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${josefinSans.variable} ${reey.variable}`}>
-        <Nav />
+        <Header />
         {children}
       </body>
     </html>
