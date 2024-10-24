@@ -1,20 +1,31 @@
 .skill {
-  padding: 2px 10px;
-  transform: skewX(-6deg);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 400;
-  width: fit-content;
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  width: auto;
+  white-space: nowrap;
+  margin: 0;
+
+  /* Trapezoid Shape */
+  clip-path: polygon(9% 0, 91% 0, 100% 100%, 0% 100%);
 }
 
+/* Invert shape for every even skill */
+.skill:nth-child(even) {
+  clip-path: polygon(0% 0, 100% 0, 91% 100%, 9% 100%);
+}
+
+/* Flex layout for skill content */
 .skillContent {
-  transform: skewX(6deg);
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
+/* Additional Styling for Specific Colors */
 .blue {
   background-color: rgba(28, 126, 214, 0.55);
 }

@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import styles from './project-detail.module.css';
 
 import ProjectFeature from './ProjectFeature';
 import Skill from '../Skill';
@@ -109,17 +110,20 @@ function ProjectDetail({ id, data }: { id: string; data: any }) {
       >
         <button
           onClick={handleBack}
-          className='-skew-x-9 bg-blue-8/20 py-3 px-4 text-base font-semibold hover:bg-blue-0/90 hover:text-blue-9'
+          className={`py-3 px-4 text-base font-semibold ${styles.trapezoidButtonInverted}`}
         >
           Go Back
         </button>
+
         <Link
           href={href}
           aria-label={`Visit the ${siteName} website`}
           target='_blank'
           rel='noopener noreferrer'
         >
-          <div className='-skew-x-9 bg-blue-8/90 py-3 px-4 text-base font-semibold hover:bg-blue-0/90 hover:text-blue-9'>
+          <div
+            className={`py-3 px-4 text-base font-semibold ${styles.trapezoidButton}`}
+          >
             Visit Site
           </div>
         </Link>
