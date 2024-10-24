@@ -30,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className={`${inter.variable} ${lora.variable}`}>
-      <body className='font-sans bg-gray-0 text-gray-9'>
+      <body className='font-sans text-gray-9'>
         <Header />
         {children}
       </body>

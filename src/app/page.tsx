@@ -5,7 +5,7 @@ import WorkSample from '../components/WorkSample';
 export default function Home() {
   return (
     <section className='min-h-screen font-sans flex flex-col items-center'>
-      <div className='flex gap-8 max-w-2xl mt-32'>
+      <div className='flex gap-8 max-w-2xl mt-48'>
         <div>
           <h2 className='font-serif text-2xl mb-4'>Hi, I'm Morgan!</h2>
           <p className='mb-4'>
