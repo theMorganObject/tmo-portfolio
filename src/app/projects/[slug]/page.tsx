@@ -1,4 +1,4 @@
-import NewProjectDetail from '@/components/gallery/project/NewProjectDetail';
+import NewProjectDetail from '@/components/gallery/project/ProjectDetail';
 import { portfolioData } from '../../../../lib/portfolioData';
 
 export function generateStaticParams() {
