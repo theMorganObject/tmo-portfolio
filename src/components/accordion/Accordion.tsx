@@ -53,10 +53,7 @@ export default function Accordion({ data, colors }: AccordionProps) {
 
   return (
     <>
-      <h2 className='flex justify-center font-reey text-red-0 text-4xl pt-32 mb-16 md:text-5xl md:mb-20'>
-        About
-      </h2>
-      <div className='flex items-center justify-between max-w-screen-md mx-auto px-8 flex-col gap-7 2xs:flex-col 2xs:gap-0 sm:flex-row sm:justify-around md:justify-between'>
+      <div className='flex items-center justify-between max-w-screen-md mx-auto px-8 flex-col gap-7 2xs:flex-col 2xs:gap-0 sm:flex-row sm:justify-around md:justify-between mt-32'>
         <div className={classes.imgWrapper}>
           <div className='w-full h-full'>
             <Image

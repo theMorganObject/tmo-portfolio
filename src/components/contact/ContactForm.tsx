@@ -2,6 +2,7 @@
 
 import React, { FC, useState } from 'react';
 import { useForm } from 'react-hook-form';
+import styles from './constact-form.module.css';
 
 export type FormData = {
   name: string;
@@ -43,17 +44,16 @@ const ContactForm: FC = () => {
       onSubmit={handleSubmit(onSubmit)}
       className='flex flex-col items-center w-full px-5'
     >
-      <div className='mb-5 w-full max-w-sm mx-auto'>
-        <label
-          htmlFor='name'
-          className='mb-3 block text-base font-medium text-lime-3'
-        >
+      <div className='mb-5 w-full max-w-sm mx-auto text-center'>
+        <label htmlFor='name' className='mb-3 block text-base font-medium'>
           Full Name
         </label>
         <input
           type='text'
           placeholder='Gary Larson'
-          className='w-full transform -skew-x-9 bg-lime-0/20 py-3 px-6 text-base font-medium text-lime-1 placeholder:text-gray-5 outline-none focus:bg-lime-1 focus:shadow-md focus:text-lime-13'
+          className={`w-full py-3 px-6 text-base font-medium 
+            placeholder:text-gray-5 outline-none  
+            focus:shadow-md focus:text-lime-13 ${styles.trapezoid}`}
           {...register('name', { required: true })}
           aria-invalid={errors.name ? 'true' : 'false'}
         />
@@ -63,17 +63,15 @@ const ContactForm: FC = () => {
           </p>
         )}
       </div>
-      <div className='mb-5 w-full max-w-sm mx-auto'>
-        <label
-          htmlFor='email'
-          className='mb-3 block text-base font-medium text-lime-3'
-        >
+
+      <div className='mb-5 w-full max-w-sm mx-auto text-center'>
+        <label htmlFor='email' className='mb-3 block text-base font-medium'>
           Email Address
         </label>
         <input
           type='email'
           placeholder='example@domain.com'
-          className='w-full transform -skew-x-9 bg-lime-0/20 py-3 px-6 text-base font-medium text-lime-1 placeholder:text-gray-5 outline-none focus:bg-lime-1 focus:shadow-md focus:text-lime-13'
+          className={`w-full py-3 px-6 text-base font-medium placeholder:text-gray-5 outline-none focus:shadow-md focus:text-lime-13 ${styles.trapezoid}`}
           {...register('email', { required: true })}
           aria-invalid={errors.email ? 'true' : 'false'}
         />
@@ -83,20 +81,17 @@ const ContactForm: FC = () => {
           </p>
         )}
       </div>
-      <div className='mb-5 w-full max-w-sm mx-auto'>
-        <label
-          htmlFor='message'
-          className='mb-3 block text-base font-medium text-lime-3'
-        >
+
+      <div className='mb-5 w-full max-w-sm mx-auto text-center'>
+        <label htmlFor='message' className='mb-3 block text-base font-medium'>
           Message
         </label>
-
         <textarea
           rows={4}
           placeholder='Type your message'
-          className='w-full transform -skew-x-9 bg-lime-0/20 py-3 px-6 text-base font-medium text-lime-1 placeholder:text-gray-5 outline-none focus:bg-lime-1 focus:shadow-md focus:text-lime-13'
+          className={`w-full py-3 px-6 text-base font-medium placeholder:text-gray-5 outline-none focus:shadow-md focus:text-lime-13 ${styles.inverted}`}
           {...register('message', { required: true })}
-          aria-invalid={errors.email ? 'true' : 'false'}
+          aria-invalid={errors.message ? 'true' : 'false'}
         ></textarea>
         {errors.message?.type === 'required' && (
           <p role='alert' className='text-red-6'>
@@ -104,8 +99,12 @@ const ContactForm: FC = () => {
           </p>
         )}
       </div>
+
       <div className='w-full max-w-md mx-auto flex justify-center'>
-        <button className='-skew-x-9 bg-lime-7/70 py-3 px-8 text-base font-semibold text-lime-0 outline-none hover:bg-lime-0/90 hover:text-lime-13 focus:ring-4 focus:ring-lime-0'>
+        <button
+          type='submit'
+          className={`py-3 px-8 text-base font-semibold outline-none transition-all ${styles.trapezoidButton}`}
+        >
           SEND
         </button>
       </div>

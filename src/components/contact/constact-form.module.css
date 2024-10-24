@@ -1,0 +1,51 @@
+.trapezoid {
+  clip-path: polygon(5% 0, 95% 0, 100% 100%, 0% 100%);
+  transition: clip-path 0.3s ease-in-out;
+  width: 100%;
+  padding: 12px 24px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  resize: none; /* Prevent textarea resizing */
+}
+
+.trapezoid:focus {
+  clip-path: polygon(0% 0, 100% 0, 95% 100%, 5% 100%);
+}
+
+.inverted {
+  clip-path: polygon(0% 0, 100% 0, 95% 100%, 5% 100%);
+  transition: clip-path 0.3s ease-in-out;
+  width: 100%;
+  padding: 12px 24px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  resize: none; /* Prevent textarea resizing */
+}
+
+.inverted:focus {
+  clip-path: polygon(5% 0, 95% 0, 100% 100%, 0% 100%);
+}
+
+.trapezoidButton {
+  clip-path: polygon(5% 0, 95% 0, 100% 100%, 0% 100%);
+  background-color: white;
+  color: black;
+  transition:
+    clip-path 0.3s ease-in-out,
+    background-color 0.3s,
+    color 0.3s;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+}
+
+.trapezoidButton:hover,
+.trapezoidButton:focus {
+  clip-path: polygon(0% 0, 100% 0, 95% 100%, 5% 100%);
+  background-color: black;
+  color: white;
+}

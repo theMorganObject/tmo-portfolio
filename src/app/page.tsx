@@ -4,7 +4,7 @@ import WorkSample from '../components/WorkSample';
 
 export default function Home() {
   return (
-    <section className='min-h-screen bg-gray-9 font-sans flex flex-col items-center'>
+    <section className='min-h-screen font-sans flex flex-col items-center'>
       <div className='flex gap-8 max-w-2xl mt-32'>
         <div>
           <h2 className='text-2xl mb-4'>Hi, I'm Morgan!</h2>
