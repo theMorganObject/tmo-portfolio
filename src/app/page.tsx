@@ -10,10 +10,12 @@ export default function Home() {
           <h2 className='text-2xl mb-4'>Hi, I'm Morgan!</h2>
           <p className='mb-4'>
             {' '}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-            possimus id soluta labore aperiam reiciendis architecto ipsam
-            perspiciatis! Sint voluptate voluptatibus sit cumque ipsa, neque
-            corporis cupiditate animi rerum pariatur.
+            I&apos;m a front-end developer, tech enthusiast, a digital nomad. I
+            am an American citizen based in the US. I typically work Eastern
+            time, though I am flexible based on project and team preferences.
+          </p>
+          <p className='mb-4'>
+            Here is a select portfolio of my recent projects:
           </p>
 
           <ul className='2xs:text-xs sm:text-base md:text-xl  lg:text-2xl'>
