@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import styles from './work-sample.module.css';
 
 interface WorkSampleProps {
   siteName: string;
@@ -11,7 +12,7 @@ const WorkSample: React.FC<WorkSampleProps> = ({ siteName, href }) => {
     <li className='flex flex-col justify-center items-center mb-2'>
       <Link
         href={href}
-        className='flex justify-between items-center w-full max-w-xs px-4 py-2 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-150 ease-in-out'
+        className={`flex justify-between items-center size-full px-8 py-4 cursor-pointer mb-4 ${styles.trapezoidButton}`}
       >
         <span>{siteName}</span>
         <span className='text-gray-300'>(show more)</span>

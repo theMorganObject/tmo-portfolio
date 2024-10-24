@@ -2,7 +2,7 @@
 
 import React, { FC, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import styles from './constact-form.module.css';
+import styles from './contact-form.module.css';
 
 export type FormData = {
   name: string;

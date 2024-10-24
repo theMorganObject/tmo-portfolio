@@ -1,0 +1,18 @@
+/* Default Trapezoid Button */
+.trapezoidButton {
+  clip-path: polygon(5% 0, 95% 0, 100% 100%, 0% 100%);
+  background-color: white;
+  color: black;
+  transition:
+    clip-path 0.3s ease-in-out,
+    background-color 0.3s,
+    color 0.3s;
+}
+
+/* Inverted Trapezoid on Hover or Focus */
+.trapezoidButton:hover,
+.trapezoidButton:focus {
+  clip-path: polygon(0% 0, 100% 0, 95% 100%, 5% 100%);
+  background-color: black;
+  color: white;
+}
