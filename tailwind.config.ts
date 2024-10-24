@@ -93,8 +93,8 @@ const config: Config = {
     },
     extend: {
       fontFamily: {
-        sans: ['var(--font-josefin-sans)'],
-        reey: ['var(--font-reey)'],
+        sans: ['var(--font-inter)', ...defaultTheme.fontFamily.sans],
+        serif: ['var(--font-lora)', ...defaultTheme.fontFamily.serif],
       },
       gridTemplateColumns: {
         '20': 'repeat(20, minmax(0, 1fr))',

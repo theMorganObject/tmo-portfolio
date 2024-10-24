@@ -1,19 +1,18 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Josefin_Sans } from 'next/font/google';
-import localFont from 'next/font/local';
+import { Inter, Lora } from 'next/font/google';
 import Header from '@/components/UI/Header';
 
-const josefinSans = Josefin_Sans({
+const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-josefin-sans',
+  variable: '--font-inter',
 });
 
-const reey = localFont({
-  src: './Reey-Regular.otf',
+const lora = Lora({
+  subsets: ['latin'],
   display: 'swap',
-  variable: '--font-reey',
+  variable: '--font-lora',
 });
 
 export const metadata: Metadata = {
@@ -30,8 +29,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
-      <body className={`${josefinSans.variable} ${reey.variable}`}>
+    <html lang='en' className={`${inter.variable} ${lora.variable}`}>
+      <body className='font-sans bg-gray-0 text-gray-9'>
         <Header />
         {children}
       </body>
