@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className='max-w-3xl mx-auto py-6 space-y-6 text-lg leading-relaxed text-gray-800'>
+    <div className='max-w-3xl mx-auto py-6 space-y-6 text-lg leading-relaxed text-gray-8'>
       <p>
         As a self-taught developer, I built my first app 3 years ago and then
         put myself through my own custom bootcamp of complete courses. I have 6

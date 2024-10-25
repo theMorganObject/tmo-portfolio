@@ -1,4 +1,3 @@
-// layout.tsx
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter, Lora } from 'next/font/google';
@@ -24,6 +23,9 @@ export const metadata: Metadata = {
     "dev, developer, front-end developer, web development, agile, scrum master, Next.js, React, Morgan O'Shaughnessey",
 };
 
+// Helper function to get the current year
+const getCurrentYear = () => new Date().getFullYear();
+
 export default function RootLayout({
   children,
 }: {
@@ -31,9 +33,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className={`${inter.variable} ${lora.variable}`}>
-      <body className='font-sans bg-white text-gray-800 antialiased'>
+      <body className='font-sans bg-white text-gray-8 antialiased'>
         <Header />
         <main className='px-4'>{children}</main>
+        <footer className='text-center py-4 text-sm text-gray-6'>
+          &copy; {getCurrentYear()} Morgan O'Shaughnessey. All rights reserved.
+        </footer>
       </body>
     </html>
   );
