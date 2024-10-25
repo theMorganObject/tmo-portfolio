@@ -7,7 +7,7 @@ export default function Home() {
     <section className='flex items-center justify-center w-full h-full'>
       <div className='flex flex-col-reverse md:flex-row items-center md:items-start gap-8 max-w-2xl w-full px-4 py-6'>
         {/* Text Section */}
-        <div className='md:w-1/2'>
+        <div className='sm:w-3/4 md:w-1/2'>
           <h2 className='font-serif text-2xl mb-4'>Hi, I'm Morgan!</h2>
           <p className='mb-4'>
             I&apos;m a front-end developer, tech enthusiast, and a digital

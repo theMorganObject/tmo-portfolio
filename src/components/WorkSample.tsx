@@ -14,7 +14,7 @@ const WorkSample: React.FC<WorkSampleProps> = ({ siteName, href }) => {
         href={href}
         className={`flex justify-between items-center size-full px-8 py-4 cursor-pointer mb-4 ${styles.trapezoidButton}`}
       >
-        <span className='font-serif'>{siteName}</span>
+        <span className='font-serif text-lg'>{siteName}</span>
         <span className='text-gray-6 text-base'>(show more)</span>
       </Link>
     </li>
