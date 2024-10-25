@@ -1,3 +1,4 @@
+// layout.tsx
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter, Lora } from 'next/font/google';
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
   description:
     "Home page of Morgan O'Shaughnessey, front-end developer and Professional Scrum Master",
   keywords:
-    "dev, developer, front-end developer, front end developer, web development, agile, professional scrum master, Next.js, React, React.js, Morgan, Morgan O'Shaughnessey",
+    "dev, developer, front-end developer, web development, agile, scrum master, Next.js, React, Morgan O'Shaughnessey",
 };
 
 export default function RootLayout({
@@ -30,9 +31,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className={`${inter.variable} ${lora.variable}`}>
-      <body className='font-sans'>
+      <body className='font-sans bg-white text-gray-800 antialiased'>
         <Header />
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   );
