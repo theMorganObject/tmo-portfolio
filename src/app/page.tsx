@@ -4,8 +4,8 @@ import WorkSample from '../components/WorkSample';
 
 export default function Home() {
   return (
-    <section className='min-h-screen font-sans flex items-center justify-center px-4'>
-      <div className='flex flex-col-reverse md:flex-row items-center md:items-start gap-8 max-w-2xl'>
+    <section className='flex items-center justify-center w-full h-full'>
+      <div className='flex flex-col-reverse md:flex-row items-center md:items-start gap-8 max-w-2xl w-full px-4 py-6'>
         {/* Text Section */}
         <div className='md:w-1/2'>
           <h2 className='font-serif text-2xl mb-4'>Hi, I'm Morgan!</h2>
