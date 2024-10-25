@@ -1,15 +1,16 @@
-// Header.tsx
 import Nav from './Nav';
 
 function Header() {
   const fullName = "Morgan O'Shaughnessey";
 
   return (
-    <header className='sticky top-0 flex flex-col items-center justify-center bg-gray-100 z-50 shadow-md px-4 py-4 md:py-6 lg:py-8'>
-      <h1 className='font-serif text-gray-900 text-2xl mb-4 2xs:mb-6 xs:text-3xl md:text-4xl md:mb-8'>
-        {fullName}
-      </h1>
-      <Nav />
+    <header className='w-full px-4 py-8 bg-white dark:bg-gray-900'>
+      <div className='relative w-fit mx-auto'>
+        <h1 className='font-serif text-gray-900 dark:text-white text-center text-2xl xs:text-3xl md:text-4xl mb-6'>
+          {fullName}
+        </h1>
+        <Nav />
+      </div>
     </header>
   );
 }

@@ -4,7 +4,7 @@ import styles from './nav.module.css';
 export default function Nav() {
   return (
     <nav aria-label='Main navigation'>
-      <ul className='flex gap-5 items-center text-sm cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-5 2xs:gap-6 xs:gap-12 md:text-lg lg:text-xl mb-2'>
+      <ul className='flex gap-5 items-center text-sm cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-5 2xs:gap-6 xs:gap-12 md:text-lg lg:text-xl'>
         <li className='relative'>
           <Link
             href='/'
