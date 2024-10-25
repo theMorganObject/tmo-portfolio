@@ -1,18 +1,18 @@
 /* Default Trapezoid Button */
 .trapezoidButton {
   clip-path: polygon(5% 0, 95% 0, 100% 100%, 0% 100%);
-  background-color: white;
-  color: black;
+  background-color: rgb(var(--background-end-rgb)); /* Matches background */
+  color: rgb(var(--foreground-rgb)); /* Matches text color */
   transition:
     clip-path 0.3s ease-in-out,
     background-color 0.3s,
     color 0.3s;
 }
 
-/* Inverted Trapezoid on Hover or Focus */
+/* Hover or Focus State */
 .trapezoidButton:hover,
 .trapezoidButton:focus {
   clip-path: polygon(0% 0, 100% 0, 95% 100%, 5% 100%);
-  background-color: black;
-  color: white;
+  background-color: rgba(var(--foreground-rgb), 0.9); /* Semi-transparent */
+  color: rgba(var(--background-end-rgb), 0.9); /* Invert text */
 }
