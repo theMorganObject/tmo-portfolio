@@ -11,9 +11,9 @@ export default function Home() {
           <h2 className='font-serif text-2xl mb-4'>Hi, I'm Morgan!</h2>
           <p className='mb-4'>
             I&apos;m a front-end developer, tech enthusiast, and a digital
-            nomad. I am an American citizen based in the US. I typically work
-            Eastern time, though I am flexible based on project and team
-            preferences.
+            nomad. I typically work Eastern time, though I am flexible based on
+            project and team preferences. I am an American citizen based in the
+            US.
           </p>
           <p className='mb-4'>
             Here is a select portfolio of my recent projects:
