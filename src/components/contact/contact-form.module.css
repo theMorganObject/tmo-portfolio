@@ -30,7 +30,7 @@
 
 .trapezoidButton {
   clip-path: polygon(5% 0, 95% 0, 100% 100%, 0% 100%);
-  background-color: white;
+  background-color: rgba(102, 168, 15, 0.55);
   color: black;
   transition:
     clip-path 0.3s ease-in-out,
@@ -46,6 +46,11 @@
 .trapezoidButton:hover,
 .trapezoidButton:focus {
   clip-path: polygon(0% 0, 100% 0, 95% 100%, 5% 100%);
-  background-color: black;
+  background-color: rgba(40, 100, 5, 0.85);
+  color: white;
+}
+
+.trapezoidButton:active {
+  background-color: rgba(40, 100, 5, 1);
   color: white;
 }
