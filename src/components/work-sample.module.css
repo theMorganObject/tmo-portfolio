@@ -1,18 +1,24 @@
-/* Default Trapezoid Button */
+/* Default Light Mode Button */
 .trapezoidButton {
   clip-path: polygon(5% 0, 95% 0, 100% 100%, 0% 100%);
-  background-color: rgb(var(--background-end-rgb)); /* Matches background */
-  color: rgb(var(--foreground-rgb)); /* Matches text color */
+  background-color: white; /* Default light mode */
+  color: black;
   transition:
     clip-path 0.3s ease-in-out,
     background-color 0.3s,
     color 0.3s;
 }
 
-/* Hover or Focus State */
+@media (prefers-color-scheme: dark) {
+  .trapezoidButton {
+    background-color: #2d2d2d;
+    color: white;
+  }
+}
+
 .trapezoidButton:hover,
 .trapezoidButton:focus {
   clip-path: polygon(0% 0, 100% 0, 95% 100%, 5% 100%);
-  background-color: rgba(var(--foreground-rgb), 0.9); /* Semi-transparent */
-  color: rgba(var(--background-end-rgb), 0.9); /* Invert text */
+  background-color: rgba(240, 62, 62, 0.55);
+  color: rgb(var(--foreground-rgb));
 }
