@@ -35,7 +35,7 @@ function ProjectDetail({ id, data }: { id: string; data: any }) {
   };
 
   return (
-    <article className='flex flex-col justify-center items-center p-4 mt-20'>
+    <article className='flex flex-col justify-center items-center p-4'>
       <header>
         <h2 className='font-serif text-3xl tracking-wider mb-12 2xs:text-3xl'>
           {siteName}
@@ -57,7 +57,7 @@ function ProjectDetail({ id, data }: { id: string; data: any }) {
       <section aria-labelledby='tech-stack'>
         <h3
           id='tech-stack'
-          className='font-serif text-xl tracking-wide text-center mb-8'
+          className='font-serif text-2xl tracking-wide text-center mb-8'
         >
           Tech Stack
         </h3>
