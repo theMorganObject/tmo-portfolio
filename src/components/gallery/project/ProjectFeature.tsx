@@ -14,7 +14,9 @@ export default function ProjectFeature({
       }`}
     >
       <div className='flex flex-col gap-4'>
-        <h3 className='font-serif text-xl tracking-wide text-center'>{name}</h3>
+        <h3 className='font-serif text-2xl tracking-wide text-center'>
+          {name}
+        </h3>
         <p className='text-base max-w-96 2xs:text-lg sm:text-lg sm:max-w-screen-xs'>
           {text}
         </p>

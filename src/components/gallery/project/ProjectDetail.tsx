@@ -57,7 +57,7 @@ function ProjectDetail({ id, data }: { id: string; data: any }) {
       <section aria-labelledby='tech-stack'>
         <h3
           id='tech-stack'
-          className='font-serif text-xl tracking-wide text-center mb-8'
+          className='font-serif text-2xl tracking-wide text-center mb-8'
         >
           Tech Stack
         </h3>
