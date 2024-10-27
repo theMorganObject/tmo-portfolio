@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className='max-w-3xl mx-auto py-6 space-y-6 text-lg leading-relaxed text-gray-1'>
+    <div className='max-w-3xl mx-auto py-6 space-y-6 text-lg leading-relaxed'>
       <p>
         As a self-taught developer, I built my first app 3 years ago and then
         put myself through my own custom bootcamp of complete courses. I have 6
@@ -12,25 +12,24 @@ const About = () => {
       </p>
 
       <p>
-        My natural affinity for complex patterns, passion for knowledge
-        acquisition, and hunger for challenges led me to coding.
+        My natural affinity for complex patterns, knowledge acquisition, and
+        love of challenges led me to coding.
       </p>
 
       <p>
-        I have a passion for process, and I embrace the continuous improvement
+        I have a passion for process and I embrace the continuous improvement
         cycles that allow me to deliver transformative user experiences in
         ever-faster iterations. I am an advocate for digital solutions to
-        real-world problems, and my ability to see the big picture and account
-        for a wide user-base in terms of accessibility, culture, and design is
-        one of my strong suits. I love working on teams.
+        real-world problems. I have a strong ability to see the big picture,
+        while accounting for a wide user-base in terms of accessibility,
+        culture, and design.
       </p>
 
       <p>
         When I&apos;m not coding, I enjoy cycling, yoga, playing music, and
         cooking. My favorite subject is languages: whether it's a new paradigm
-        or the next skill set I have to develop for a project. Outside of
-        spending my time coding, I'm embracing the digital nomad lifestyle and
-        learning to speak Korean.
+        or the next skill set for a project. Outside of spending my time coding,
+        I'm embracing the digital nomad lifestyle and learning to speak Korean.
       </p>
     </div>
   );
