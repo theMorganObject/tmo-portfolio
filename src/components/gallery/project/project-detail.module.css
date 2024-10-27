@@ -1,0 +1,51 @@
+/* Trapezoid Button - Default */
+.trapezoidButton {
+  clip-path: polygon(9% 0, 91% 0, 100% 100%, 0% 100%);
+  background-color: rgba(28, 126, 214, 0.9); /* Default background */
+  color: white;
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  cursor: pointer;
+  transition:
+    clip-path 0.3s ease-in-out,
+    background-color 0.3s,
+    color 0.3s;
+  border: none;
+}
+
+/* Trapezoid Button - Inverted (Go Back) */
+.trapezoidButtonInverted {
+  clip-path: polygon(0% 0, 100% 0, 91% 100%, 9% 100%);
+  background-color: rgba(
+    28,
+    126,
+    214,
+    0.2
+  ); /* Different background for Go Back */
+  color: white;
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  cursor: pointer;
+  transition:
+    clip-path 0.3s ease-in-out,
+    background-color 0.3s,
+    color 0.3s;
+  border: none;
+}
+
+/* Hover and Focus State (Flip Effect) */
+.trapezoidButton:hover,
+.trapezoidButton:focus {
+  clip-path: polygon(0% 0, 100% 0, 91% 100%, 9% 100%);
+  background-color: rgba(28, 126, 214, 1);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.trapezoidButtonInverted:hover,
+.trapezoidButtonInverted:focus {
+  clip-path: polygon(9% 0, 91% 0, 100% 100%, 0% 100%);
+  background-color: rgba(28, 126, 214, 1);
+  color: rgba(255, 255, 255, 0.9);
+}

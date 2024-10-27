@@ -1,13 +1,11 @@
-import Accordion from '@/components/accordion/Accordion';
-import { morganObjects } from '../../../lib/morganObjects';
+import About from '@/components/about/About';
 
-// COLORS FOR ACCORDION SELECTOR COMPONENT
-const colors = ['#5c940d', '#1864ab', '#e03131', '#343a40'];
-
-export default function About() {
+export default function Page() {
   return (
-    <section className='relative min-h-screen bg-red-13 font-sans'>
-      <Accordion data={morganObjects} colors={colors} />
+    <section className='flex items-center justify-center w-full h-full'>
+      <div className='max-w-[800px] w-full mx-auto text-left px-4'>
+        <About />
+      </div>
     </section>
   );
 }

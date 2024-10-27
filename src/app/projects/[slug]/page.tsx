@@ -1,6 +1,5 @@
-import NewProjectDetail from '@/components/gallery/project/NewProjectDetail';
+import ProjectDetail from '@/components/gallery/project/ProjectDetail';
 import { portfolioData } from '../../../../lib/portfolioData';
-import { workSamples } from '../../../../lib/worksamples';
 
 export function generateStaticParams() {
   const allProjects = portfolioData;
@@ -12,8 +11,8 @@ export function generateStaticParams() {
 
 export default function Page({ params }: { params: { slug: string } }) {
   return (
-    <section className='min-h-screen bg-blue-12 font-sans pt-10'>
-      <NewProjectDetail id={`projects/${params.slug}`} data={portfolioData} />
+    <section className='min-h-screen font-sans py-6'>
+      <ProjectDetail id={`projects/${params.slug}`} data={portfolioData} />
     </section>
   );
 }

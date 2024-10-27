@@ -1,0 +1,56 @@
+.navItem {
+  color: black;
+  transition: color 0.3s ease-in-out;
+}
+
+.navItem::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(9% 0, 91% 0, 100% 100%, 0% 100%);
+  z-index: -1;
+  transition:
+    clip-path 0.3s ease-in-out,
+    background-color 0.3s;
+}
+
+/* Hover and Focus: Change both text color and background */
+.navItem:hover,
+.navItem:focus {
+  color: white;
+}
+
+/* Darker Hover Colors */
+.navItem.red:hover::before,
+.navItem.red:focus::before {
+  clip-path: polygon(0% 0, 100% 0, 91% 100%, 9% 100%);
+  background-color: rgba(160, 30, 30, 0.85);
+}
+
+.navItem.blue:hover::before,
+.navItem.blue:focus::before {
+  clip-path: polygon(0% 0, 100% 0, 91% 100%, 9% 100%);
+  background-color: rgba(15, 70, 140, 0.85);
+}
+
+.navItem.green:hover::before,
+.navItem.green:focus::before {
+  clip-path: polygon(0% 0, 100% 0, 91% 100%, 9% 100%);
+  background-color: rgba(40, 100, 5, 0.85);
+}
+
+/* Default Colors for Each Button Background */
+.red::before {
+  background-color: rgba(240, 62, 62, 0.55);
+}
+
+.blue::before {
+  background-color: rgba(28, 126, 214, 0.55);
+}
+
+.green::before {
+  background-color: rgba(102, 168, 15, 0.55);
+}

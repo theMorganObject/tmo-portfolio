@@ -36,7 +36,7 @@ export const portfolioData = [
     },
   },
   {
-    siteName: 'Berman Poems',
+    siteName: 'Poetry',
     href: 'https://berman-poems.vercel.app/',
     slug: 'projects/berman-poems',
     isFeatured: true,

@@ -1,27 +1,21 @@
 import React from 'react';
-import classes from './WorkSample.module.css';
 import Link from 'next/link';
+import styles from './work-sample.module.css';
 
 interface WorkSampleProps {
   siteName: string;
-  description: string;
-  href: string;
-  position: number;
+  slug: string;
 }
 
-const WorkSample: React.FC<WorkSampleProps> = ({
-  siteName,
-  description,
-  href,
-}) => {
+const WorkSample: React.FC<WorkSampleProps> = ({ siteName, slug }) => {
   return (
-    <li className={classes.item}>
+    <li className='flex flex-col justify-center items-center mb-2'>
       <Link
-        className='text-blue-3 underline underline-offset-[3px] decoration-1 cursor-pointer hover:text-red-3 focus:outline-none focus:ring-2 focus:ring-red-5'
-        href={href}
+        href={slug}
+        className={`flex justify-between items-center size-full px-8 py-4 cursor-pointer mb-4 ${styles.trapezoidButton}`}
       >
-        <span className='font-reey tracking-widest'>{siteName}</span>
-        {` - ${description}`}
+        <span className='font-serif text-lg'>{siteName}</span>
+        <span className='text-gray-6 text-base'>(show more)</span>
       </Link>
     </li>
   );

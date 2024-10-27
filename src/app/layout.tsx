@@ -1,19 +1,19 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Josefin_Sans } from 'next/font/google';
-import localFont from 'next/font/local';
-import Nav from '@/components/Nav';
+import { Inter, Lora } from 'next/font/google';
+import Header from '@/components/UI/Header';
+import { useEffect } from 'react';
 
-const josefinSans = Josefin_Sans({
+const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-josefin-sans',
+  variable: '--font-inter',
 });
 
-const reey = localFont({
-  src: './Reey-Regular.otf',
+const lora = Lora({
+  subsets: ['latin'],
   display: 'swap',
-  variable: '--font-reey',
+  variable: '--font-lora',
 });
 
 export const metadata: Metadata = {
@@ -21,8 +21,10 @@ export const metadata: Metadata = {
   description:
     "Home page of Morgan O'Shaughnessey, front-end developer and Professional Scrum Master",
   keywords:
-    "dev, developer, front-end developer, front end developer, web development, agile, professional scrum master, Next.js, React, React.js, Morgan, Morgan O'Shaughnessey",
+    "dev, developer, front-end developer, web development, agile, scrum master, Next.js, React, Morgan O'Shaughnessey",
 };
+
+const getCurrentYear = () => new Date().getFullYear();
 
 export default function RootLayout({
   children,
@@ -30,10 +32,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
-      <body className={`${josefinSans.variable} ${reey.variable}`}>
-        <Nav />
-        {children}
+    <html lang='en' className={`${inter.variable} ${lora.variable}`}>
+      <body className='font-sans bg-white text-gray-800 antialiased flex flex-col min-h-screen'>
+        <Header />
+        <main className='flex-grow px-4'>{children}</main>
+        <footer className='text-center py-4 text-sm text-gray-600'>
+          &copy; {getCurrentYear()} Morgan O'Shaughnessey. All rights reserved.
+        </footer>
       </body>
     </html>
   );
