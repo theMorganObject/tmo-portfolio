@@ -23,7 +23,7 @@ export default function Home() {
             {portfolioData.map((sample) => (
               <WorkSample
                 key={sample.siteName}
-                href={sample.slug}
+                slug={`/${sample.slug}`}
                 siteName={sample.siteName}
               />
             ))}

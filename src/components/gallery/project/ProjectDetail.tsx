@@ -35,7 +35,7 @@ function ProjectDetail({ id, data }: { id: string; data: any }) {
   };
 
   return (
-    <article className='flex flex-col justify-center items-center p-4'>
+    <article className='flex flex-col justify-center items-center p-4 mt-20'>
       <header>
         <h2 className='font-serif text-3xl tracking-wider mb-12 2xs:text-3xl'>
           {siteName}
