@@ -53,7 +53,7 @@ const ContactForm: FC = () => {
           placeholder='Gary Larson'
           className={`w-full py-3 px-6 text-base font-medium 
             placeholder:text-gray-5 outline-none  
-            focus:shadow-md focus:text-lime-13 ${styles.trapezoid}`}
+            focus:shadow-md text-lime-13 ${styles.trapezoid}`}
           {...register('name', { required: true })}
           aria-invalid={errors.name ? 'true' : 'false'}
         />
@@ -71,7 +71,7 @@ const ContactForm: FC = () => {
         <input
           type='email'
           placeholder='example@domain.com'
-          className={`w-full py-3 px-6 text-base font-medium placeholder:text-gray-5 outline-none focus:shadow-md focus:text-lime-13 ${styles.trapezoid}`}
+          className={`w-full py-3 px-6 text-base font-medium placeholder:text-gray-5 outline-none focus:shadow-md text-lime-13 ${styles.trapezoid}`}
           {...register('email', { required: true })}
           aria-invalid={errors.email ? 'true' : 'false'}
         />
@@ -89,7 +89,7 @@ const ContactForm: FC = () => {
         <textarea
           rows={4}
           placeholder='Type your message'
-          className={`w-full py-3 px-6 text-base font-medium placeholder:text-gray-5 outline-none focus:shadow-md focus:text-lime-13 ${styles.inverted}`}
+          className={`w-full py-3 px-6 text-base font-medium placeholder:text-gray-5 outline-none focus:shadow-md text-lime-13 ${styles.inverted}`}
           {...register('message', { required: true })}
           aria-invalid={errors.message ? 'true' : 'false'}
         ></textarea>
