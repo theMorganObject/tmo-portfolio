@@ -54,3 +54,23 @@
 .green::before {
   background-color: rgba(102, 168, 15, 0.55);
 }
+
+/* Active State: Customize background and text color */
+.active {
+  color: white;
+}
+
+.active.red::before {
+  clip-path: polygon(0% 0, 100% 0, 91% 100%, 9% 100%);
+  background-color: rgba(160, 30, 30, 0.85);
+}
+
+.active.blue::before {
+  clip-path: polygon(0% 0, 100% 0, 91% 100%, 9% 100%);
+  background-color: rgba(15, 70, 140, 0.85);
+}
+
+.active.green::before {
+  clip-path: polygon(0% 0, 100% 0, 91% 100%, 9% 100%);
+  background-color: rgba(40, 100, 5, 0.85);
+}
