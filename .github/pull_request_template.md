@@ -1,5 +1,3 @@
-# PR TITLE
-
 ## TRELLO Ticket Link:
 
 [linkName](pasteLinkHere)
