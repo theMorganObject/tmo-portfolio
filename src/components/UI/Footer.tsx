@@ -7,7 +7,7 @@ function Footer() {
     <footer className='text-center py-4 text-sm text-gray-600'>
       <div className='flex justify-center gap-4 mb-4'>
         <a
-          href='https://www.linkedin.com/in/your-profile'
+          href='https://www.linkedin.com/in/morgan-o-shaughnessey/'
           target='_blank'
           rel='noopener noreferrer'
           aria-label='LinkedIn'
