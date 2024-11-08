@@ -1,3 +1,5 @@
+// TODO: rebuild this page with new styling https://trello.com/c/nHqjH8nM
+
 import ProjectDetail from '@/components/gallery/project/ProjectDetail';
 import { workSamples } from '../../../../../lib/worksamples';
 
