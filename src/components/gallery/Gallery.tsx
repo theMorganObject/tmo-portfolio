@@ -1,3 +1,5 @@
+// TODO: refactor https://trello.com/c/nHqjH8nM
+
 import Card from './Card';
 import { workSamples } from '../../../lib/worksamples';
 import { skillsMapping } from '../../../lib/skillsMapping';
