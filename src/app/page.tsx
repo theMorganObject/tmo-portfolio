@@ -10,13 +10,15 @@ export default function Home() {
         <div className='sm:w-3/4 md:w-1/2'>
           <h2 className='font-serif text-2xl mb-4'>Hi, I'm Morgan!</h2>
           <p className='mb-4'>
-            I&apos;m a front-end developer, tech enthusiast, and a digital
-            nomad. I typically work Eastern time, though I am flexible based on
-            project and team preferences. I am an American citizen based in the
-            US.
+            I’m a front-end developer and technology enthusiast with a passion
+            for crafting digital solutions to real-world challenges.
+            Collaboration and leadership are at the core of my work, backed by
+            my experience as a Professional Scrum Master. Based in the US, I
+            typically work in Eastern Time but am adaptable to meet the needs of
+            global teams.
           </p>
           <p className='mb-4'>
-            Here is a select portfolio of my recent projects:
+            Below, you&apos;ll find a curated selection of my recent projects:
           </p>
 
           <ul className='2xs:text-xs sm:text-base md:text-xl lg:text-2xl'>
