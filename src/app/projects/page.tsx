@@ -1,3 +1,5 @@
+// TODO: refactor https://trello.com/c/nHqjH8nM
+
 export default function Projects() {
   return (
     <section className='min-h-screen bg-white font-sans flex flex-col items-center justify-center px-4'>

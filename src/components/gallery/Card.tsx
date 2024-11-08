@@ -1,3 +1,5 @@
+// TODO: refactor https://trello.com/c/nHqjH8nM
+
 import Image from 'next/image';
 import Skill from './Skill';
 import Link from 'next/link';
