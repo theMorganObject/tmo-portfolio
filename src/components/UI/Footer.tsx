@@ -5,18 +5,7 @@ function Footer() {
 
   return (
     <footer className='text-center py-4 text-sm text-gray-600'>
-      <div className='flex justify-center gap-4 mb-4'>
-        <a
-          href='https://www.linkedin.com/in/your-profile'
-          target='_blank'
-          rel='noopener noreferrer'
-          aria-label='LinkedIn'
-        >
-          <FaLinkedin
-            className='text-gray-600 hover:text-gray-800 transition-colors duration-300'
-            size={32}
-          />
-        </a>
+      <div className='flex justify-center gap-8 mb-8'>
         <a
           href='https://github.com/theMorganObject'
           target='_blank'
@@ -25,11 +14,24 @@ function Footer() {
         >
           <FaGithub
             className='text-gray-600 hover:text-gray-800 transition-colors duration-300'
-            size={32}
+            size={46}
+          />
+        </a>
+        <a
+          href='https://www.linkedin.com/in/morgan-o-shaughnessey/'
+          target='_blank'
+          rel='noopener noreferrer'
+          aria-label='LinkedIn'
+        >
+          <FaLinkedin
+            className='text-gray-600 hover:text-gray-800 transition-colors duration-300'
+            size={46}
           />
         </a>
       </div>
-      &copy; {getCurrentYear()} Morgan O'Shaughnessey. All rights reserved.
+      <div className='mb-8'>
+        &copy; {getCurrentYear()} Morgan O'Shaughnessey. All rights reserved.
+      </div>
     </footer>
   );
 }
