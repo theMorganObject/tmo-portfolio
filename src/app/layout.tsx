@@ -1,5 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/next';
 import { Inter, Lora } from 'next/font/google';
 import Header from '@/components/UI/Header';
 import { useEffect } from 'react';
@@ -33,6 +34,7 @@ export default function RootLayout({
   return (
     <html lang='en' className={`${inter.variable} ${lora.variable}`}>
       <body className='font-sans bg-white text-gray-800 antialiased flex flex-col min-h-screen'>
+        <Analytics />
         <Header />
         <main className='flex-grow px-4'>{children}</main>
         <Footer />
