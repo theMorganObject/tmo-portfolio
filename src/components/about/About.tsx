@@ -2,34 +2,36 @@ const About = () => {
   return (
     <div className='max-w-3xl mx-auto py-6 space-y-6 text-lg leading-relaxed'>
       <p>
-        As a self-taught developer, I built my first app 3 years ago and then
-        put myself through my own custom bootcamp of complete courses. I have 6
-        months' production experience as an independent contractor at a video
-        streaming startup. I have an additional 5 years&apos; experience in
-        non-profit leadership and enjoyed a career as a music teacher before I
-        learned to code. I also hold an M.M. from the University of California,
-        Los Angeles.
+        As a self-taught developer, I built my first app three years ago and
+        committed to a rigorous self-designed program of study. With six months
+        of production experience as an independent contractor at a video
+        streaming startup, I have firsthand knowledge of building and deploying
+        scalable solutions under pressure. My background also includes five
+        years of non-profit leadership and a continuous career as a music
+        teacher, where I honed my ability to learn, adapt, and lead by example.
+        I hold an M.M. from the University of California, Los Angeles.
       </p>
 
       <p>
-        My natural affinity for complex patterns, knowledge acquisition, and
-        love of challenges led me to coding.
+        I thrive in challenging environments, whether it&apos;s unraveling
+        complex systems or finding innovative solutions to tough problems. For
+        me, coding is not just a profession—it&apos;s a craft that demands
+        discipline, precision, and creative thinking. I approach every project
+        with focus and determination, embracing the intricate complexity of this
+        field as an opportunity to grow and deliver results.
       </p>
 
       <p>
-        I have a passion for process and I embrace the continuous improvement
-        cycles that allow me to deliver transformative user experiences in
-        ever-faster iterations. I am an advocate for digital solutions to
-        real-world problems. I have a strong ability to see the big picture,
-        while accounting for a wide user-base in terms of accessibility,
-        culture, and design.
+        I&apos;m passionate about refining processes and embracing continuous
+        improvement. This focus allows me to deliver transformative user
+        experiences through steady, efficient work. I see the big picture,
+        keeping accessibility in mind and ensuring solutions that work for
+        everyone.
       </p>
 
       <p>
-        When I&apos;m not coding, I enjoy cycling, yoga, playing music, and
-        cooking. My favorite subject is languages: whether it's a new paradigm
-        or the next skill set for a project. Outside of spending my time coding,
-        I'm embracing the digital nomad lifestyle and learning to speak Korean.
+        Outside of coding, I enjoy cycling, yoga, playing music, cooking, and
+        learning new languages.
       </p>
     </div>
   );
