@@ -10,8 +10,8 @@ export default function Home() {
         <div className='sm:w-3/4 md:w-1/2'>
           <h2 className='font-serif text-2xl mb-4'>Hi, I'm Morgan!</h2>
           <p className='mb-4'>
-            I’m a front-end developer and technology enthusiast with a passion
-            for crafting digital solutions to real-world challenges.
+            I&apos;m a software developer and technology enthusiast with a
+            passion for crafting digital solutions to real-world challenges.
             Collaboration and leadership are at the core of my work, backed by
             my experience as a Professional Scrum Master. Based in the US, I
             typically work in Eastern Time but am adaptable to meet the needs of
