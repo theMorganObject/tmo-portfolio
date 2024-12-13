@@ -42,16 +42,16 @@ const ContactForm: FC = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className='flex flex-col items-center w-full px-5'
+      className='flex flex-col items-center w-full text-lg px-5 space-y-8'
     >
-      <div className='mb-5 w-full max-w-sm mx-auto text-center'>
-        <label htmlFor='name' className='mb-3 block text-base font-medium'>
+      <div className='w-full max-w-sm mx-auto text-center'>
+        <label htmlFor='name' className='mb-3 block'>
           Full Name
         </label>
         <input
           type='text'
           placeholder='Gary Larson'
-          className={`w-full py-3 px-6 text-base font-medium 
+          className={`w-full py-3 px-6 
             placeholder:text-gray-5 outline-none  
             focus:shadow-md text-lime-13 ${styles.trapezoid}`}
           {...register('name', { required: true })}
@@ -64,14 +64,14 @@ const ContactForm: FC = () => {
         )}
       </div>
 
-      <div className='mb-5 w-full max-w-sm mx-auto text-center'>
-        <label htmlFor='email' className='mb-3 block text-base font-medium'>
+      <div className='w-full max-w-sm mx-auto text-center'>
+        <label htmlFor='email' className='mb-3 block'>
           Email Address
         </label>
         <input
           type='email'
           placeholder='example@domain.com'
-          className={`w-full py-3 px-6 text-base font-medium placeholder:text-gray-5 outline-none focus:shadow-md text-lime-13 ${styles.trapezoid}`}
+          className={`w-full py-3 px-6 placeholder:text-gray-5 outline-none focus:shadow-md text-lime-13 ${styles.trapezoid}`}
           {...register('email', { required: true })}
           aria-invalid={errors.email ? 'true' : 'false'}
         />
@@ -82,14 +82,14 @@ const ContactForm: FC = () => {
         )}
       </div>
 
-      <div className='mb-5 w-full max-w-sm mx-auto text-center'>
-        <label htmlFor='message' className='mb-3 block text-base font-medium'>
+      <div className='w-full max-w-sm mx-auto text-center'>
+        <label htmlFor='message' className='mb-3 block'>
           Message
         </label>
         <textarea
           rows={4}
           placeholder='Type your message'
-          className={`w-full py-3 px-6 text-base font-medium placeholder:text-gray-5 outline-none focus:shadow-md text-lime-13 ${styles.inverted}`}
+          className={`w-full py-3 px-6 placeholder:text-gray-5 outline-none focus:shadow-md text-lime-13 ${styles.trapezoid}`}
           {...register('message', { required: true })}
           aria-invalid={errors.message ? 'true' : 'false'}
         ></textarea>
@@ -103,7 +103,7 @@ const ContactForm: FC = () => {
       <div className='w-full max-w-md mx-auto flex justify-center'>
         <button
           type='submit'
-          className={`py-3 px-8 text-base font-semibold outline-none transition-all ${styles.trapezoidButton}`}
+          className={`py-3 px-8 font-semibold outline-none transition-all ${styles.trapezoidButton}`}
         >
           SEND
         </button>
