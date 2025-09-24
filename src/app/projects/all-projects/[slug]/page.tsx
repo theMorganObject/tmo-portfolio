@@ -3,18 +3,24 @@
 import ProjectDetail from '@/components/gallery/project/ProjectDetail';
 import { workSamples } from '../../../../../lib/worksamples';
 
-export function generateStaticParams() {
-  const allProjects = workSamples;
+type RouteParams = { slug: string };
 
-  return allProjects.map((project) => ({
+export function generateStaticParams(): Array<RouteParams> {
+  return workSamples.map((project) => ({
     slug: project.id.toString(),
   }));
 }
 
-export default function Page({ params }: { params: { slug: string } }) {
+// Next 15: params is a Promise
+export default async function Page({
+  params,
+}: {
+  params: Promise<RouteParams>;
+}) {
+  const { slug } = await params;
   return (
     <section className='min-h-screen bg-blue-12 font-sans pt-10'>
-      <ProjectDetail id={params.slug} data={workSamples} />
+      <ProjectDetail id={slug} data={workSamples} />
     </section>
   );
 }
