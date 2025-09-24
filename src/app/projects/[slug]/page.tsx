@@ -1,18 +1,24 @@
 import ProjectDetail from '@/components/gallery/project/ProjectDetail';
 import { portfolioData } from '../../../../lib/portfolioData';
 
-export function generateStaticParams() {
-  const allProjects = portfolioData;
+type RouteParams = { slug: string };
 
+export function generateStaticParams(): Array<RouteParams> {
+  const allProjects = portfolioData;
   return allProjects.map((project) => ({
     slug: project.slug.toString(),
   }));
 }
 
-export default function Page({ params }: { params: { slug: string } }) {
+export default async function Page({
+  params,
+}: {
+  params: Promise<RouteParams>;
+}) {
+  const { slug } = await params;
   return (
     <section className='min-h-screen font-sans py-6'>
-      <ProjectDetail id={`projects/${params.slug}`} data={portfolioData} />
+      <ProjectDetail id={`projects/${slug}`} data={portfolioData} />
     </section>
   );
 }
